@@ -1,0 +1,7 @@
+lane :deploy do
+  gradle(task: "clean assembleRelease")
+  upload_to_play_store(
+    track: 'production',
+    apk: 'app/build/outputs/apk/release/ElemSocialbuild.apk'
+  )
+end
