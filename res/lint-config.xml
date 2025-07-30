@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- посылаем нахуй иконку -->
+    <issue id="MissingApplicationIcon" severity="ignore" />
+
+    <!-- хардкод я сама решу -->
+    <issue id="HardcodedText" severity="informational" />
+
+    <!-- ВАХВАВХАХХХХХХ ОХУЕТЬ ПИЗДЕЦ ВЕДЬ Я ВНАТУРЕ ГЕНИЙ  -->
+    <issue id="UnusedResources" severity="ignore" />
+</lint>
