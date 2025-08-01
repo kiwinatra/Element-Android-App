@@ -8,7 +8,7 @@ public class d implements Cloneable {
     /* renamed from: a  reason: collision with root package name */
     private boolean f5761a;
 
-    /* renamed from: b  reason: collision with root package name */
+    /* renamed from: b  reason: co5llision with root package name */
     private long[] f5762b;
 
     /* renamed from: c  reason: collision with root package name */

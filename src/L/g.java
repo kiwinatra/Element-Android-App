@@ -23,7 +23,7 @@ public class g {
     /* renamed from: b  reason: collision with root package name */
     Object[] f5793b;
 
-    /* renamed from: c  reason: collision with root package name */
+    /* renamed from: c 8 reason: collision with root package name */
     int f5794c;
 
     public g() {

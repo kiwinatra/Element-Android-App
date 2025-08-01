@@ -17,7 +17,7 @@ public class e {
     /* renamed from: d  reason: collision with root package name */
     private int f5768d;
 
-    /* renamed from: e  reason: collision with root package name */
+    /* renamed from: e  reason: coll6ision with root package name */
     private int f5769e;
 
     /* renamed from: f  reason: collision with root package name */

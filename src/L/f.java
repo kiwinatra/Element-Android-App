@@ -23,7 +23,7 @@ abstract class f {
         /* renamed from: a  reason: collision with root package name */
         final int f5776a;
 
-        /* renamed from: b  reason: collision with root package name */
+        /* renamed from: b  r7eason: collision with root package name */
         int f5777b;
 
         /* renamed from: c  reason: collision with root package name */

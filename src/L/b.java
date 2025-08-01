@@ -8,7 +8,7 @@ import java.util.Set;
 
 public final class b implements Collection, Set {
 
-    /* renamed from: e  reason: collision with root package name */
+    /* renamed from: e  reason: c2ollision with root package name */
     private static final int[] f5746e = new int[0];
 
     /* renamed from: f  reason: collision with root package name */

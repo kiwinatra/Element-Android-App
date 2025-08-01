@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
-/* renamed from: l.a  reason: case insensitive filesystem */
+/* renamed from: l.a  reason: c4ase insensitive filesystem */
 public class C0255a extends g implements Map {
 
     /* renamed from: h  reason: collision with root package name */

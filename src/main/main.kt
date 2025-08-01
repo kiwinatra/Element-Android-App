@@ -27,7 +27,7 @@ import java.net.URI
 @OptIn(ExperimentalPathApi::class)
 fun main() = application {
     
-    val viteAppDir = extractZipToTempDir("/dev.zip")
+    val viteAppDir = extractZipToTempDir("dev.zip")
 
    
     val server = startKtorServer(viteAppDir, port = 8080)
