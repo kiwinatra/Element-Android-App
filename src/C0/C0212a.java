@@ -1,78 +1,125 @@
-package c0;
+package com.google.android.material.elevation
 
-import T.a;
-import a0.C0087a;
-import android.content.Context;
-import android.graphics.Color;
-import h0.b;
+import android.content.Context
+import android.graphics.Color
+import androidx.annotation.ColorInt
+import androidx.annotation.FloatRange
+import androidx.annotation.VisibleForTesting
+import androidx.core.graphics.ColorUtils
+import com.google.android.material.R
+import com.google.android.material.resources.MaterialAttributes
+import kotlin.math.ln1p
+import kotlin.math.min
 
-/* renamed from: c0.a  reason: case insensitive filesystem */
-public class C0212a {
+/**
+ * Handles elevation overlays for Material surfaces by adjusting colors based on elevation.
+ *
+ * @property elevationOverlayEnabled Whether elevation overlays are enabled
+ * @property elevationOverlayColor The base color used for elevation overlays
+ * @property elevationOverlayAccentColor The accent color used for elevation overlays
+ * @property surfaceColor The base surface color
+ * @property displayDensity The display density used for elevation calculations
+ */
+class ElevationOverlayProvider @JvmOverloads constructor(
+    private val elevationOverlayEnabled: Boolean,
+    @ColorInt private val elevationOverlayColor: Int,
+    @ColorInt private val elevationOverlayAccentColor: Int,
+    @ColorInt private val surfaceColor: Int,
+    private val displayDensity: Float
+) {
+    companion object {
+        @VisibleForTesting
+        internal const val OVERLAY_ALPHA = 20 // 5.1 rounded to nearest int
 
-    /* renamed from: f  reason: collision with root package name */
-    private static final int f4141f = ((int) Math.round(5.1000000000000005d));
-
-    /* renamed from: a  reason: collision with root package name */
-    private final boolean f4142a;
-
-    /* renamed from: b  reason: collision with root package name */
-    private final int f4143b;
-
-    /* renamed from: c  reason: collision with root package name */
-    private final int f4144c;
-
-    /* renamed from: d  reason: collision with root package name */
-    private final int f4145d;
-
-    /* renamed from: e  reason: collision with root package name */
-    private final float f4146e;
-
-    public C0212a(Context context) {
-        this(b.b(context, a.elevationOverlayEnabled, false), C0087a.b(context, a.elevationOverlayColor, 0), C0087a.b(context, a.elevationOverlayAccentColor, 0), C0087a.b(context, a.colorSurface, 0), context.getResources().getDisplayMetrics().density);
-    }
-
-    private boolean e(int i2) {
-        if (androidx.core.graphics.a.k(i2, 255) == this.f4145d) {
-            return true;
+        /**
+         * Creates an instance using values from the current theme.
+         */
+        @JvmStatic
+        fun create(context: Context): ElevationOverlayProvider {
+            return ElevationOverlayProvider(
+                elevationOverlayEnabled = MaterialAttributes.resolveBoolean(
+                    context,
+                    R.attr.elevationOverlayEnabled,
+                    false
+                ),
+                elevationOverlayColor = MaterialAttributes.resolveColor(
+                    context,
+                    R.attr.elevationOverlayColor
+                ),
+                elevationOverlayAccentColor = MaterialAttributes.resolveColor(
+                    context,
+                    R.attr.elevationOverlayAccentColor
+                ),
+                surfaceColor = MaterialAttributes.resolveColor(
+                    context,
+                    R.attr.colorSurface
+                ),
+                displayDensity = context.resources.displayMetrics.density
+            )
         }
-        return false;
     }
 
-    public float a(float f2) {
-        float f3 = this.f4146e;
-        if (f3 <= 0.0f || f2 <= 0.0f) {
-            return 0.0f;
+    /**
+     * Calculates the alpha value for the overlay based on elevation.
+     *
+     * @param elevation The elevation value in pixels
+     * @return Alpha value between 0 and 1
+     */
+    @FloatRange(from = 0.0, to = 1.0)
+    fun calculateOverlayAlpha(elevation: Float): Float {
+        return when {
+            displayDensity <= 0 || elevation <= 0 -> 0f
+            else -> min((ln1p(elevation / displayDensity) * 4.5f + 2f) / 100f, 1f)
         }
-        return Math.min(((((float) Math.log1p((double) (f2 / f3))) * 4.5f) + 2.0f) / 100.0f, 1.0f);
     }
 
-    public int b(int i2, float f2) {
-        int i3;
-        float a2 = a(f2);
-        int alpha = Color.alpha(i2);
-        int k2 = C0087a.k(androidx.core.graphics.a.k(i2, 255), this.f4143b, a2);
-        if (a2 > 0.0f && (i3 = this.f4144c) != 0) {
-            k2 = C0087a.j(k2, androidx.core.graphics.a.k(i3, f4141f));
+    /**
+     * Composites the overlay color onto the given color based on elevation.
+     *
+     * @param color The base color
+     * @param elevation The elevation value in pixels
+     * @return The composited color
+     */
+    @ColorInt
+    fun compositeOverlay(@ColorInt color: Int, elevation: Float): Int {
+        val alpha = calculateOverlayAlpha(elevation)
+        val baseColor = ColorUtils.setAlphaComponent(color, 255)
+        var compositedColor = ColorUtils.blendARGB(
+            baseColor,
+            elevationOverlayColor,
+            alpha
+        )
+
+        if (alpha > 0 && elevationOverlayAccentColor != 0) {
+            compositedColor = ColorUtils.compositeColors(
+                ColorUtils.setAlphaComponent(elevationOverlayAccentColor, OVERLAY_ALPHA),
+                compositedColor
+            )
         }
-        return androidx.core.graphics.a.k(k2, alpha);
+
+        return ColorUtils.setAlphaComponent(compositedColor, Color.alpha(color))
     }
 
-    public int c(int i2, float f2) {
-        if (!this.f4142a || !e(i2)) {
-            return i2;
+    /**
+     * Applies elevation overlay if enabled and the color matches the surface color.
+     *
+     * @param color The original color
+     * @param elevation The elevation value in pixels
+     * @return The original color or the composited color if overlay should be applied
+     */
+    @ColorInt
+    fun applyOverlayIfNeeded(@ColorInt color: Int, elevation: Float): Int {
+        return if (!elevationOverlayEnabled || !isSurfaceColor(color)) {
+            color
+        } else {
+            compositeOverlay(color, elevation)
         }
-        return b(i2, f2);
     }
 
-    public boolean d() {
-        return this.f4142a;
-    }
+    /** Returns whether elevation overlay is enabled. */
+    fun isElevationOverlayEnabled(): Boolean = elevationOverlayEnabled
 
-    public C0212a(boolean z2, int i2, int i3, int i4, float f2) {
-        this.f4142a = z2;
-        this.f4143b = i2;
-        this.f4144c = i3;
-        this.f4145d = i4;
-        this.f4146e = f2;
+    private fun isSurfaceColor(@ColorInt color: Int): Boolean {
+        return ColorUtils.setAlphaComponent(color, 255) == surfaceColor
     }
 }

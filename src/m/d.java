@@ -19,8 +19,8 @@ public final class d extends a {
         a().putAll(aVar.a());
     }
 
-    /* JADX INFO: this call moved to the top of the method (can break code semantics) */
-    public /* synthetic */ d(a aVar, int i2, e eVar) {
+    
+    public  d(a aVar, int i2, e eVar) {
         this((i2 & 1) != 0 ? a.C0007a.f132b : aVar);
     }
 }

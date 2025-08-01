@@ -7,11 +7,11 @@ import android.view.ViewOutlineProvider;
 
 class q extends o {
 
-    /* renamed from: f  reason: collision with root package name */
+    
     private boolean f5740f = false;
-    /* access modifiers changed from: private */
+    
 
-    /* renamed from: g  reason: collision with root package name */
+    
     public float f5741g = 0.0f;
 
     class a extends ViewOutlineProvider {
@@ -105,7 +105,7 @@ class q extends o {
         return true;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public void b(View view) {
         boolean z2;
         this.f5741g = l();
@@ -123,7 +123,7 @@ class q extends o {
         }
     }
 
-    /* access modifiers changed from: package-private */
+    
     public boolean i() {
         if (!this.f5740f || this.f5735a) {
             return true;

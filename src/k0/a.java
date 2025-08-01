@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public final class a implements c {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final float f5608a;
 
     public a(float f2) {

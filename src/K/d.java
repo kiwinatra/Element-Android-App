@@ -4,10 +4,10 @@ import android.view.animation.Interpolator;
 
 abstract class d implements Interpolator {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final float[] f129a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private final float f130b;
 
     protected d(float[] fArr) {

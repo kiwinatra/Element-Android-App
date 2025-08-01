@@ -3,43 +3,43 @@ package m;
 import java.util.Arrays;
 import m.C0257b;
 
-/* renamed from: m.a  reason: case insensitive filesystem */
+
 public class C0256a implements C0257b.a {
 
-    /* renamed from: l  reason: collision with root package name */
+    
     private static float f5808l = 0.001f;
 
-    /* renamed from: a  reason: collision with root package name */
+    
     int f5809a = 0;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private final C0257b f5810b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     protected final C0258c f5811c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private int f5812d = 8;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     private i f5813e = null;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     private int[] f5814f = new int[8];
 
-    /* renamed from: g  reason: collision with root package name */
+    
     private int[] f5815g = new int[8];
 
-    /* renamed from: h  reason: collision with root package name */
+    
     private float[] f5816h = new float[8];
 
-    /* renamed from: i  reason: collision with root package name */
+    
     private int f5817i = -1;
 
-    /* renamed from: j  reason: collision with root package name */
+    
     private int f5818j = -1;
 
-    /* renamed from: k  reason: collision with root package name */
+    
     private boolean f5819k = false;
 
     C0256a(C0257b bVar, C0258c cVar) {

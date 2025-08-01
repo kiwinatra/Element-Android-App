@@ -4,13 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 import k.C0254b;
 
-/* renamed from: k.a  reason: case insensitive filesystem */
+
 public class C0253a extends C0254b {
 
-    /* renamed from: e  reason: collision with root package name */
+    
     private final HashMap f5594e = new HashMap();
 
-    /* access modifiers changed from: protected */
+    
     public C0254b.c c(Object obj) {
         return (C0254b.c) this.f5594e.get(obj);
     }

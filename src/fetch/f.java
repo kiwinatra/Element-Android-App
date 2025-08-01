@@ -7,12 +7,12 @@ import android.view.inputmethod.InputContentInfo;
 
 public final class f {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final c f4a;
 
     private static final class a implements c {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         final InputContentInfo f5a;
 
         a(Uri uri, ClipDescription clipDescription, Uri uri2) {
@@ -93,13 +93,13 @@ public final class f {
 
     private static final class b implements c {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private final Uri f6a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         private final ClipDescription f7b;
 
-        /* renamed from: c  reason: collision with root package name */
+        
         private final Uri f8c;
 
         b(Uri uri, ClipDescription clipDescription, Uri uri2) {

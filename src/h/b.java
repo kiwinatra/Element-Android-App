@@ -5,13 +5,13 @@ import androidx.emoji2.text.o;
 
 final class b extends Editable.Factory {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private static final Object f74a = new Object();
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private static volatile Editable.Factory f75b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private static Class f76c;
 
     private b() {

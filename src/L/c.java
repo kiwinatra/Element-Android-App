@@ -2,13 +2,13 @@ package l;
 
 abstract class c {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     static final int[] f5757a = new int[0];
 
-    /* renamed from: b  reason: collision with root package name */
+    
     static final long[] f5758b = new long[0];
 
-    /* renamed from: c  reason:3 collision with root package name */
+    
     static final Object[] f5759c = new Object[0];
 
     static int a(int[] iArr, int i2, int i3) {

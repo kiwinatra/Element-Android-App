@@ -9,19 +9,19 @@ import android.view.View;
 
 public abstract class o {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     boolean f5735a = false;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     boolean f5736b = false;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     k f5737c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     RectF f5738d = new RectF();
 
-    /* renamed from: e  reason: collision with root package name */
+    
     final Path f5739e = new Path();
 
     public static o a(View view) {
@@ -49,7 +49,7 @@ public abstract class o {
         }
     }
 
-    /* access modifiers changed from: package-private */
+    
     public abstract void b(View view);
 
     public void d(Canvas canvas, a.C0008a aVar) {
@@ -87,6 +87,6 @@ public abstract class o {
         b(view);
     }
 
-    /* access modifiers changed from: package-private */
+    
     public abstract boolean i();
 }

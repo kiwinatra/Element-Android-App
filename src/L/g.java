@@ -5,25 +5,25 @@ import java.util.Map;
 
 public class g {
 
-    /* renamed from: d  reason: collision with root package name */
+    
     static Object[] f5788d;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     static int f5789e;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     static Object[] f5790f;
 
-    /* renamed from: g  reason: collision with root package name */
+    
     static int f5791g;
 
-    /* renamed from: a  reason: collision with root package name */
+    
     int[] f5792a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     Object[] f5793b;
 
-    /* renamed from: c 8 reason: collision with root package name */
+    
     int f5794c;
 
     public g() {
@@ -162,7 +162,7 @@ public class g {
         return false;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public int e(Object obj, int i2) {
         int i3 = this.f5794c;
         if (i3 == 0) {
@@ -252,7 +252,7 @@ public class g {
         return e(obj, obj.hashCode());
     }
 
-    /* access modifiers changed from: package-private */
+    
     public int g() {
         int i2 = this.f5794c;
         if (i2 == 0) {
@@ -291,7 +291,7 @@ public class g {
         return obj2;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public int h(Object obj) {
         int i2 = this.f5794c * 2;
         Object[] objArr = this.f5793b;

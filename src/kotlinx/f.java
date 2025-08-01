@@ -12,10 +12,10 @@ import android.view.ViewGroup;
 
 public class f extends a {
 
-    /* renamed from: g  reason: collision with root package name */
+    
     private final float f5386g;
 
-    /* renamed from: h  reason: collision with root package name */
+    
     private final float f5387h;
 
     class a extends AnimatorListenerAdapter {

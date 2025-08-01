@@ -16,22 +16,22 @@ import androidx.core.view.W;
 
 public class g extends a {
 
-    /* renamed from: g  reason: collision with root package name */
+    
     private final float f5389g;
 
-    /* renamed from: h  reason: collision with root package name */
+    
     private final float f5390h;
 
-    /* renamed from: i  reason: collision with root package name */
+    
     private final float f5391i;
 
     class a extends AnimatorListenerAdapter {
 
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ boolean f5392a;
+        
+        final  boolean f5392a;
 
-        /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ int f5393b;
+        
+        final  int f5393b;
 
         a(boolean z2, int i2) {
             this.f5392a = z2;

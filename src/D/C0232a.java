@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.PACKAGE, ElementType.TYPE, ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.METHOD, ElementType.FIELD})
 @Retention(RetentionPolicy.CLASS)
-/* renamed from: d.a  reason: case insensitive filesystem */
+
 public @interface C0232a {
 }

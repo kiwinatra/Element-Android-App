@@ -12,40 +12,40 @@ import android.graphics.Shader;
 
 public class a {
 
-    /* renamed from: i  reason: collision with root package name */
+    
     private static final int[] f5582i = new int[3];
 
-    /* renamed from: j  reason: collision with root package name */
+    
     private static final float[] f5583j = {0.0f, 0.5f, 1.0f};
 
-    /* renamed from: k  reason: collision with root package name */
+    
     private static final int[] f5584k = new int[4];
 
-    /* renamed from: l  reason: collision with root package name */
+    
     private static final float[] f5585l = {0.0f, 0.0f, 0.5f, 1.0f};
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final Paint f5586a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private final Paint f5587b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private final Paint f5588c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private int f5589d;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     private int f5590e;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     private int f5591f;
 
-    /* renamed from: g  reason: collision with root package name */
+    
     private final Path f5592g;
 
-    /* renamed from: h  reason: collision with root package name */
+    
     private final Paint f5593h;
 
     public a() {

@@ -7,10 +7,10 @@ import androidx.appcompat.view.d;
 
 public abstract class a {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private static final int[] f5909a = {16842752, T.a.theme};
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private static final int[] f5910b = {T.a.materialThemeOverlay};
 
     private static int a(Context context, AttributeSet attributeSet) {

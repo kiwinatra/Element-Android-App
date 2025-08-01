@@ -5,10 +5,10 @@ import java.util.Arrays;
 
 public final class b implements c {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final c f5609a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private final float f5610b;
 
     public b(float f2, c cVar) {

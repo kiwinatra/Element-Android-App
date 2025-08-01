@@ -6,85 +6,85 @@ import m.i;
 import p.d;
 import p.e;
 
-/* renamed from: m.d  reason: case insensitive filesystem */
+
 public class C0259d {
 
-    /* renamed from: r  reason: collision with root package name */
+    
     public static boolean f5830r = false;
 
-    /* renamed from: s  reason: collision with root package name */
+    
     public static boolean f5831s = true;
 
-    /* renamed from: t  reason: collision with root package name */
+    
     public static boolean f5832t = true;
 
-    /* renamed from: u  reason: collision with root package name */
+    
     public static boolean f5833u = true;
 
-    /* renamed from: v  reason: collision with root package name */
+    
     public static boolean f5834v = false;
 
-    /* renamed from: w  reason: collision with root package name */
+    
     private static int f5835w = 1000;
 
-    /* renamed from: x  reason: collision with root package name */
+    
     public static long f5836x;
 
-    /* renamed from: y  reason: collision with root package name */
+    
     public static long f5837y;
 
-    /* renamed from: a  reason: collision with root package name */
+    
     public boolean f5838a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     int f5839b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private HashMap f5840c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private a f5841d;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     private int f5842e;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     private int f5843f;
 
-    /* renamed from: g  reason: collision with root package name */
+    
     C0257b[] f5844g;
 
-    /* renamed from: h  reason: collision with root package name */
+    
     public boolean f5845h;
 
-    /* renamed from: i  reason: collision with root package name */
+    
     public boolean f5846i;
 
-    /* renamed from: j  reason: collision with root package name */
+    
     private boolean[] f5847j;
 
-    /* renamed from: k  reason: collision with root package name */
+    
     int f5848k;
 
-    /* renamed from: l  reason: collision with root package name */
+    
     int f5849l;
 
-    /* renamed from: m  reason: collision with root package name */
+    
     private int f5850m;
 
-    /* renamed from: n  reason: collision with root package name */
+    
     final C0258c f5851n;
 
-    /* renamed from: o  reason: collision with root package name */
+    
     private i[] f5852o;
 
-    /* renamed from: p  reason: collision with root package name */
+    
     private int f5853p;
 
-    /* renamed from: q  reason: collision with root package name */
+    
     private a f5854q;
 
-    /* renamed from: m.d$a */
+    
     interface a {
         void a(i iVar);
 
@@ -99,7 +99,7 @@ public class C0259d {
         boolean isEmpty();
     }
 
-    /* renamed from: m.d$b */
+    
     class b extends C0257b {
         public b(C0258c cVar) {
             this.f5824e = new j(this, cVar);
@@ -404,7 +404,7 @@ public class C0259d {
         this.f5850m = i3;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public void A(a aVar) {
         u(aVar);
         B(aVar, false);
@@ -489,93 +489,11 @@ public class C0259d {
         d(r2);
     }
 
-    /* JADX WARNING: Removed duplicated region for block: B:35:0x0080 A[RETURN] */
-    /* JADX WARNING: Removed duplicated region for block: B:36:0x0081  */
-    /* Code decompiled incorrectly, please refer to instructions dump. */
+    
+    
+    
     public void d(m.C0257b r6) {
-        /*
-            r5 = this;
-            if (r6 != 0) goto L_0x0003
-            return
-        L_0x0003:
-            int r0 = r5.f5849l
-            r1 = 1
-            int r0 = r0 + r1
-            int r2 = r5.f5850m
-            if (r0 >= r2) goto L_0x0012
-            int r0 = r5.f5848k
-            int r0 = r0 + r1
-            int r2 = r5.f5843f
-            if (r0 < r2) goto L_0x0015
-        L_0x0012:
-            r5.y()
-        L_0x0015:
-            boolean r0 = r6.f5825f
-            r2 = 0
-            if (r0 != 0) goto L_0x0082
-            r6.D(r5)
-            boolean r0 = r6.isEmpty()
-            if (r0 == 0) goto L_0x0024
-            return
-        L_0x0024:
-            r6.r()
-            boolean r0 = r6.f(r5)
-            if (r0 == 0) goto L_0x0079
-            m.i r0 = r5.p()
-            r6.f5820a = r0
-            int r3 = r5.f5849l
-            r5.l(r6)
-            int r4 = r5.f5849l
-            int r3 = r3 + r1
-            if (r4 != r3) goto L_0x0079
-            m.d$a r2 = r5.f5854q
-            r2.c(r6)
-            m.d$a r2 = r5.f5854q
-            r5.B(r2, r1)
-            int r2 = r0.f5872d
-            r3 = -1
-            if (r2 != r3) goto L_0x007a
-            m.i r2 = r6.f5820a
-            if (r2 != r0) goto L_0x0059
-            m.i r0 = r6.v(r0)
-            if (r0 == 0) goto L_0x0059
-            r6.x(r0)
-        L_0x0059:
-            boolean r0 = r6.f5825f
-            if (r0 != 0) goto L_0x0062
-            m.i r0 = r6.f5820a
-            r0.h(r5, r6)
-        L_0x0062:
-            boolean r0 = f5834v
-            if (r0 == 0) goto L_0x006e
-            m.c r0 = r5.f5851n
-            m.f r0 = r0.f5826a
-        L_0x006a:
-            r0.a(r6)
-            goto L_0x0073
-        L_0x006e:
-            m.c r0 = r5.f5851n
-            m.f r0 = r0.f5827b
-            goto L_0x006a
-        L_0x0073:
-            int r0 = r5.f5849l
-            int r0 = r0 - r1
-            r5.f5849l = r0
-            goto L_0x007a
-        L_0x0079:
-            r1 = 0
-        L_0x007a:
-            boolean r0 = r6.s()
-            if (r0 != 0) goto L_0x0081
-            return
-        L_0x0081:
-            r2 = r1
-        L_0x0082:
-            if (r2 != 0) goto L_0x0087
-            r5.l(r6)
-        L_0x0087:
-            return
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: m.C0259d.d(m.b):void");
     }
 
@@ -672,7 +590,7 @@ public class C0259d {
         d(r2);
     }
 
-    /* access modifiers changed from: package-private */
+    
     public void m(C0257b bVar, int i2, int i3) {
         bVar.e(o(i3, (String) null), i2);
     }

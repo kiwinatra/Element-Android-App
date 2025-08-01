@@ -6,29 +6,29 @@ import m.C0257b;
 
 public class h extends C0257b {
 
-    /* renamed from: g  reason: collision with root package name */
+    
     private int f5858g = 128;
 
-    /* renamed from: h  reason: collision with root package name */
+    
     private i[] f5859h = new i[128];
 
-    /* renamed from: i  reason: collision with root package name */
+    
     private i[] f5860i = new i[128];
 
-    /* renamed from: j  reason: collision with root package name */
+    
     private int f5861j = 0;
 
-    /* renamed from: k  reason: collision with root package name */
+    
     b f5862k = new b(this);
 
-    /* renamed from: l  reason: collision with root package name */
+    
     C0258c f5863l;
 
     class a implements Comparator {
         a() {
         }
 
-        /* renamed from: a */
+        
         public int compare(i iVar, i iVar2) {
             return iVar.f5871c - iVar2.f5871c;
         }
@@ -36,10 +36,10 @@ public class h extends C0257b {
 
     class b {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         i f5865a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         h f5866b;
 
         public b(h hVar) {
@@ -166,7 +166,7 @@ public class h extends C0257b {
         iVar.a(this);
     }
 
-    /* access modifiers changed from: private */
+    
     public final void G(i iVar) {
         int i2 = 0;
         while (i2 < this.f5861j) {

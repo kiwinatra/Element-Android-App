@@ -9,27 +9,27 @@ import java.util.Set;
 
 abstract class f {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     b f5773a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     c f5774b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     e f5775c;
 
     final class a implements Iterator {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         final int f5776a;
 
-        /* renamed from: b  r7eason: collision with root package name */
+        
         int f5777b;
 
-        /* renamed from: c  reason: collision with root package name */
+        
         int f5778c;
 
-        /* renamed from: d  reason: collision with root package name */
+        
         boolean f5779d = false;
 
         a(int i2) {
@@ -71,7 +71,7 @@ abstract class f {
         b() {
         }
 
-        /* renamed from: a */
+        
         public boolean add(Map.Entry entry) {
             throw new UnsupportedOperationException();
         }
@@ -265,13 +265,13 @@ abstract class f {
 
     final class d implements Iterator, Map.Entry {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         int f5783a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         int f5784b;
 
-        /* renamed from: c  reason: collision with root package name */
+        
         boolean f5785c = false;
 
         d() {
@@ -279,7 +279,7 @@ abstract class f {
             this.f5784b = -1;
         }
 
-        /* renamed from: a */
+        
         public Map.Entry next() {
             if (hasNext()) {
                 this.f5784b++;
@@ -517,31 +517,31 @@ abstract class f {
         return false;
     }
 
-    /* access modifiers changed from: protected */
+    
     public abstract void a();
 
-    /* access modifiers changed from: protected */
+    
     public abstract Object b(int i2, int i3);
 
-    /* access modifiers changed from: protected */
+    
     public abstract Map c();
 
-    /* access modifiers changed from: protected */
+    
     public abstract int d();
 
-    /* access modifiers changed from: protected */
+    
     public abstract int e(Object obj);
 
-    /* access modifiers changed from: protected */
+    
     public abstract int f(Object obj);
 
-    /* access modifiers changed from: protected */
+    
     public abstract void g(Object obj, Object obj2);
 
-    /* access modifiers changed from: protected */
+    
     public abstract void h(int i2);
 
-    /* access modifiers changed from: protected */
+    
     public abstract Object i(int i2, Object obj);
 
     public Set l() {

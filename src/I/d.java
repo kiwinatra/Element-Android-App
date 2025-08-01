@@ -11,7 +11,7 @@ import u.C0286a;
 
 public class d extends C0246b implements Menu {
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private final C0286a f5556d;
 
     public d(Context context, C0286a aVar) {

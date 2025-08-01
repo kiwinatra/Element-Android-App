@@ -4,16 +4,16 @@ import android.graphics.Typeface;
 
 public final class a extends f {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final Typeface f5496a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private final C0074a f5497b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private boolean f5498c;
 
-    /* renamed from: h0.a$a  reason: collision with other inner class name */
+    
     public interface C0074a {
         void a(Typeface typeface);
     }

@@ -5,13 +5,13 @@ import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 import w0.i;
 
-/* renamed from: b.a  reason: case insensitive filesystem */
+
 public final class C0208a {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final Set f4133a = new CopyOnWriteArraySet();
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private volatile Context f4134b;
 
     public final void a(C0209b bVar) {

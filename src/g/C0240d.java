@@ -14,46 +14,46 @@ import e.C0233a;
 import e.i;
 import e.j;
 
-/* renamed from: g.d  reason: case insensitive filesystem */
+
 public class C0240d extends Drawable {
 
-    /* renamed from: m  reason: collision with root package name */
+    
     private static final float f5459m = ((float) Math.toRadians(45.0d));
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final Paint f5460a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private float f5461b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private float f5462c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private float f5463d;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     private float f5464e;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     private boolean f5465f;
 
-    /* renamed from: g  reason: collision with root package name */
+    
     private final Path f5466g = new Path();
 
-    /* renamed from: h  reason: collision with root package name */
+    
     private final int f5467h;
 
-    /* renamed from: i  reason: collision with root package name */
+    
     private boolean f5468i = false;
 
-    /* renamed from: j  reason: collision with root package name */
+    
     private float f5469j;
 
-    /* renamed from: k  reason: collision with root package name */
+    
     private float f5470k;
 
-    /* renamed from: l  reason: collision with root package name */
+    
     private int f5471l = 2;
 
     public C0240d(Context context) {

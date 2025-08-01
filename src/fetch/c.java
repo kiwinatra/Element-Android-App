@@ -9,7 +9,7 @@ import x.h;
 
 public abstract class c {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private static final String[] f0a = new String[0];
 
     private static class a {

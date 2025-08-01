@@ -5,81 +5,126 @@ import android.media.MediaDescription;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
-abstract class a {
+public final class MediaDescriptionCompatUtils {
 
-    /* renamed from: android.support.v4.media.a$a  reason: collision with other inner class name */
-    static class C0012a {
-        public static Object a(Object obj) {
-            return ((MediaDescription.Builder) obj).build();
+    private static final String TAG = "MediaDescCompatUtils";
+    private static final boolean DEBUG = BuildConfig.DEBUG;
+
+    public static final class BuilderWrapper {
+        private final MediaDescription.Builder builder;
+
+        public BuilderWrapper() {
+            this.builder = new MediaDescription.Builder();
         }
 
-        public static Object b() {
-            return new MediaDescription.Builder();
+        public MediaDescription build() {
+            return builder.build();
         }
 
-        public static void c(Object obj, CharSequence charSequence) {
-            ((MediaDescription.Builder) obj).setDescription(charSequence);
+        public BuilderWrapper setDescription(@Nullable CharSequence description) {
+            builder.setDescription(description);
+            return this;
         }
 
-        public static void d(Object obj, Bundle bundle) {
-            ((MediaDescription.Builder) obj).setExtras(bundle);
+        public BuilderWrapper setExtras(@Nullable Bundle extras) {
+            if (DEBUG) Log.d(TAG, "Setting extras: " + extras);
+            builder.setExtras(extras);
+            return this;
         }
 
-        public static void e(Object obj, Bitmap bitmap) {
-            ((MediaDescription.Builder) obj).setIconBitmap(bitmap);
+        public BuilderWrapper setIconBitmap(@Nullable Bitmap icon) {
+            if (DEBUG && icon != null) {
+                Log.d(TAG, "Setting icon bitmap: " + icon.getWidth() + "x" + icon.getHeight());
+            }
+            builder.setIconBitmap(icon);
+            return this;
         }
 
-        public static void f(Object obj, Uri uri) {
-            ((MediaDescription.Builder) obj).setIconUri(uri);
+        public BuilderWrapper setIconUri(@Nullable Uri iconUri) {
+            if (DEBUG && iconUri != null) {
+                Log.d(TAG, "Setting icon URI: " + iconUri);
+            }
+            builder.setIconUri(iconUri);
+            return this;
         }
 
-        public static void g(Object obj, String str) {
-            ((MediaDescription.Builder) obj).setMediaId(str);
+        public BuilderWrapper setMediaId(@Nullable String mediaId) {
+            if (DEBUG) Log.d(TAG, "Setting media ID: " + mediaId);
+            builder.setMediaId(mediaId);
+            return this;
         }
 
-        public static void h(Object obj, CharSequence charSequence) {
-            ((MediaDescription.Builder) obj).setSubtitle(charSequence);
+        public BuilderWrapper setSubtitle(@Nullable CharSequence subtitle) {
+            builder.setSubtitle(subtitle);
+            return this;
         }
 
-        public static void i(Object obj, CharSequence charSequence) {
-            ((MediaDescription.Builder) obj).setTitle(charSequence);
+        public BuilderWrapper setTitle(@Nullable CharSequence title) {
+            builder.setTitle(title);
+            return this;
         }
     }
 
-    public static Object a(Parcel parcel) {
-        return MediaDescription.CREATOR.createFromParcel(parcel);
+    @NonNull
+    public static MediaDescription fromParcel(@NonNull Parcel parcel) {
+        try {
+            return MediaDescription.CREATOR.createFromParcel(parcel);
+        } catch (Exception e) {
+            if (DEBUG) Log.e(TAG, "Failed to create from parcel", e);
+            throw new IllegalArgumentException("Invalid parcel data", e);
+        }
     }
 
-    public static CharSequence b(Object obj) {
-        return ((MediaDescription) obj).getDescription();
+    @Nullable
+    public static CharSequence getDescription(@NonNull MediaDescription description) {
+        return description.getDescription();
     }
 
-    public static Bundle c(Object obj) {
-        return ((MediaDescription) obj).getExtras();
+    @Nullable
+    public static Bundle getExtras(@NonNull MediaDescription description) {
+        return description.getExtras();
     }
 
-    public static Bitmap d(Object obj) {
-        return ((MediaDescription) obj).getIconBitmap();
+    @Nullable
+    public static Bitmap getIconBitmap(@NonNull MediaDescription description) {
+        return description.getIconBitmap();
     }
 
-    public static Uri e(Object obj) {
-        return ((MediaDescription) obj).getIconUri();
+    @Nullable
+    public static Uri getIconUri(@NonNull MediaDescription description) {
+        return description.getIconUri();
     }
 
-    public static String f(Object obj) {
-        return ((MediaDescription) obj).getMediaId();
+    @Nullable
+    public static String getMediaId(@NonNull MediaDescription description) {
+        return description.getMediaId();
     }
 
-    public static CharSequence g(Object obj) {
-        return ((MediaDescription) obj).getSubtitle();
+    @Nullable
+    public static CharSequence getSubtitle(@NonNull MediaDescription description) {
+        return description.getSubtitle();
     }
 
-    public static CharSequence h(Object obj) {
-        return ((MediaDescription) obj).getTitle();
+    @Nullable
+    public static CharSequence getTitle(@NonNull MediaDescription description) {
+        return description.getTitle();
     }
 
-    public static void i(Object obj, Parcel parcel, int i2) {
-        ((MediaDescription) obj).writeToParcel(parcel, i2);
+    public static void writeToParcel(@NonNull MediaDescription description, @NonNull Parcel dest, int flags) {
+        try {
+            description.writeToParcel(dest, flags);
+        } catch (Exception e) {
+            if (DEBUG) Log.e(TAG, "Failed to write to parcel", e);
+            throw new IllegalStateException("Failed to write description to parcel", e);
+        }
+    }
+
+    @NonNull
+    public static BuilderWrapper newBuilder() {
+        return new BuilderWrapper();
     }
 }

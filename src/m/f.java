@@ -5,10 +5,10 @@ import w0.i;
 
 public final class f {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final Class f135a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private final l f136b;
 
     public f(Class cls, l lVar) {

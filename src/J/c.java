@@ -17,10 +17,10 @@ import w0.i;
 
 public final class c {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     public static final c f108a = new c();
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private static C0006c f109b = C0006c.f120d;
 
     public enum a {
@@ -37,27 +37,27 @@ public final class c {
     public interface b {
     }
 
-    /* renamed from: J.c$c  reason: collision with other inner class name */
+    
     public static final class C0006c {
 
-        /* renamed from: c  reason: collision with root package name */
+        
         public static final a f119c = new a((e) null);
 
-        /* renamed from: d  reason: collision with root package name */
+        
         public static final C0006c f120d = new C0006c(G.a(), (b) null, A.d());
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private final Set f121a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         private final Map f122b;
 
-        /* renamed from: J.c$c$a */
+        
         public static final class a {
             private a() {
             }
 
-            public /* synthetic */ a(e eVar) {
+            public  a(e eVar) {
                 this();
             }
         }
@@ -117,7 +117,7 @@ public final class c {
         }
     }
 
-    /* access modifiers changed from: private */
+    
     public static final void d(String str, g gVar) {
         i.e(gVar, "$violation");
         Log.e("FragmentStrictMode", "Policy violation with PENALTY_DEATH in " + str, gVar);

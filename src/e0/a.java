@@ -1,7 +1,21 @@
 package e0;
 
-public abstract class a {
-    public static float a(float f2, float f3, float f4, float f5) {
-        return (float) Math.hypot((double) (f4 - f2), (double) (f5 - f3));
+/**
+ * Утилитарный класс для математических операций с координатами
+ */
+public abstract class GeometryUtils {
+
+    /**
+     * Вычисляет евклидово расстояние между двумя точками
+     * @param x1 координата X первой точки
+     * @param y1 координата Y первой точки
+     * @param x2 координата X второй точки
+     * @param y2 координата Y второй точки
+     * @return расстояние между точками
+     */
+    public static float calculateDistance(float x1, float y1, float x2, float y2) {
+        float dx = x2 - x1;
+        float dy = y2 - y1;
+        return (float) Math.sqrt(dx * dx + dy * dy);
     }
 }

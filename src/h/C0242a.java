@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import org.xmlpull.v1.XmlPullParser;
 
-/* renamed from: h.a  reason: case insensitive filesystem */
+
 public abstract class C0242a {
     public static Drawable a(Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
         return Drawable.createFromXmlInner(resources, xmlPullParser, attributeSet, theme);

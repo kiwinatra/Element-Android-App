@@ -25,7 +25,7 @@ class r extends o {
         view.setOutlineProvider(new a());
     }
 
-    /* access modifiers changed from: package-private */
+    
     public void b(View view) {
         view.setClipToOutline(!i());
         if (i()) {
@@ -35,7 +35,7 @@ class r extends o {
         }
     }
 
-    /* access modifiers changed from: package-private */
+    
     public boolean i() {
         return this.f5735a;
     }

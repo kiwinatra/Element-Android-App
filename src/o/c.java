@@ -8,16 +8,16 @@ import w0.i;
 
 public final class c {
 
-    /* renamed from: d  reason: collision with root package name */
+    
     public static final a f156d = new a((e) null);
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final d f157a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private final androidx.savedstate.a f158b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private boolean f159c;
 
     public static final class a {
@@ -29,7 +29,7 @@ public final class c {
             return new c(dVar, (e) null);
         }
 
-        public /* synthetic */ a(e eVar) {
+        public  a(e eVar) {
             this();
         }
     }
@@ -75,7 +75,7 @@ public final class c {
         this.f158b.g(bundle);
     }
 
-    public /* synthetic */ c(d dVar, e eVar) {
+    public  c(d dVar, e eVar) {
         this(dVar);
     }
 }

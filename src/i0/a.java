@@ -12,15 +12,15 @@ import k0.n;
 
 public class a extends Drawable implements n, androidx.core.graphics.drawable.b {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private b f5557a;
 
     static final class b extends Drawable.ConstantState {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         g f5558a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         boolean f5559b;
 
         public b(b bVar) {
@@ -28,7 +28,7 @@ public class a extends Drawable implements n, androidx.core.graphics.drawable.b 
             this.f5559b = bVar.f5559b;
         }
 
-        /* renamed from: a */
+        
         public a newDrawable() {
             return new a(new b(this));
         }
@@ -47,7 +47,7 @@ public class a extends Drawable implements n, androidx.core.graphics.drawable.b 
         this.f5557a = bVar;
     }
 
-    /* renamed from: a */
+    
     public a mutate() {
         this.f5557a = new b(this.f5557a);
         return this;
@@ -72,13 +72,13 @@ public class a extends Drawable implements n, androidx.core.graphics.drawable.b 
         return true;
     }
 
-    /* access modifiers changed from: protected */
+    
     public void onBoundsChange(Rect rect) {
         super.onBoundsChange(rect);
         this.f5557a.f5558a.setBounds(rect);
     }
 
-    /* access modifiers changed from: protected */
+    
     public boolean onStateChange(int[] iArr) {
         boolean onStateChange = super.onStateChange(iArr);
         if (this.f5557a.f5558a.setState(iArr)) {

@@ -2,7 +2,6 @@ package k0;
 
 public class e extends d {
 
-    /* renamed from: a  reason: collision with root package name */
     float f5611a = -1.0f;
 
     public void a(m mVar, float f2, float f3, float f4) {

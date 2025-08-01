@@ -1,6 +1,6 @@
 package j;
 
-/* renamed from: j.e  reason: case insensitive filesystem */
+
 public abstract class C0252e {
     public abstract void a(Runnable runnable);
 

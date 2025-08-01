@@ -8,81 +8,81 @@ import java.util.Set;
 
 public final class b implements Collection, Set {
 
-    /* renamed from: e  reason: c2ollision with root package name */
+    
     private static final int[] f5746e = new int[0];
 
-    /* renamed from: f  reason: collision with root package name */
+    
     private static final Object[] f5747f = new Object[0];
 
-    /* renamed from: g  reason: collision with root package name */
+    
     private static Object[] f5748g;
 
-    /* renamed from: h  reason: collision with root package name */
+    
     private static int f5749h;
 
-    /* renamed from: i  reason: collision with root package name */
+    
     private static Object[] f5750i;
 
-    /* renamed from: j  reason: collision with root package name */
+    
     private static int f5751j;
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private int[] f5752a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     Object[] f5753b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     int f5754c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private f f5755d;
 
     class a extends f {
         a() {
         }
 
-        /* access modifiers changed from: protected */
+        
         public void a() {
             b.this.clear();
         }
 
-        /* access modifiers changed from: protected */
+        
         public Object b(int i2, int i3) {
             return b.this.f5753b[i2];
         }
 
-        /* access modifiers changed from: protected */
+        
         public Map c() {
             throw new UnsupportedOperationException("not a map");
         }
 
-        /* access modifiers changed from: protected */
+        
         public int d() {
             return b.this.f5754c;
         }
 
-        /* access modifiers changed from: protected */
+        
         public int e(Object obj) {
             return b.this.indexOf(obj);
         }
 
-        /* access modifiers changed from: protected */
+        
         public int f(Object obj) {
             return b.this.indexOf(obj);
         }
 
-        /* access modifiers changed from: protected */
+        
         public void g(Object obj, Object obj2) {
             b.this.add(obj);
         }
 
-        /* access modifiers changed from: protected */
+        
         public void h(int i2) {
             b.this.g(i2);
         }
 
-        /* access modifiers changed from: protected */
+        
         public Object i(int i2, Object obj) {
             throw new UnsupportedOperationException("not a map");
         }

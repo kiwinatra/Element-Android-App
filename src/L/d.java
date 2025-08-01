@@ -2,19 +2,19 @@ package l;
 
 public class d implements Cloneable {
 
-    /* renamed from: e  reason: collision with root package name */
+    
     private static final Object f5760e = new Object();
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private boolean f5761a;
 
-    /* renamed from: b  reason: co5llision with root package name */
+    
     private long[] f5762b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private Object[] f5763c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private int f5764d;
 
     public d() {
@@ -77,7 +77,7 @@ public class d implements Cloneable {
         this.f5761a = false;
     }
 
-    /* renamed from: c */
+    
     public d clone() {
         try {
             d dVar = (d) super.clone();
@@ -161,27 +161,10 @@ public class d implements Cloneable {
         this.f5764d++;
     }
 
-    /* JADX WARNING: Code restructure failed: missing block: B:2:0x000a, code lost:
-        r4 = r2.f5763c;
-     */
-    /* Code decompiled incorrectly, please refer to instructions dump. */
+    
+    
     public void j(long r3) {
-        /*
-            r2 = this;
-            long[] r0 = r2.f5762b
-            int r1 = r2.f5764d
-            int r3 = l.c.b(r0, r1, r3)
-            if (r3 < 0) goto L_0x0017
-            java.lang.Object[] r4 = r2.f5763c
-            r0 = r4[r3]
-            java.lang.Object r1 = f5760e
-            if (r0 == r1) goto L_0x0017
-            r4[r3] = r1
-            r3 = 1
-            r2.f5761a = r3
-        L_0x0017:
-            return
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: l.d.j(long):void");
     }
 

@@ -30,83 +30,83 @@ import k0.m;
 
 public class g extends Drawable implements androidx.core.graphics.drawable.b, n {
 
-    /* renamed from: x  reason: collision with root package name */
+    
     private static final String f5612x = "g";
 
-    /* renamed from: y  reason: collision with root package name */
+    
     private static final Paint f5613y;
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private c f5614a;
-    /* access modifiers changed from: private */
+    
 
-    /* renamed from: b  reason: collision with root package name */
+    
     public final m.g[] f5615b;
-    /* access modifiers changed from: private */
+    
 
-    /* renamed from: c  reason: collision with root package name */
+    
     public final m.g[] f5616c;
-    /* access modifiers changed from: private */
+    
 
-    /* renamed from: d  reason: collision with root package name */
+    
     public final BitSet f5617d;
-    /* access modifiers changed from: private */
+    
 
-    /* renamed from: e  reason: collision with root package name */
+    
     public boolean f5618e;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     private final Matrix f5619f;
 
-    /* renamed from: g  reason: collision with root package name */
+    
     private final Path f5620g;
 
-    /* renamed from: h  reason: collision with root package name */
+    
     private final Path f5621h;
 
-    /* renamed from: i  reason: collision with root package name */
+    
     private final RectF f5622i;
 
-    /* renamed from: j  reason: collision with root package name */
+    
     private final RectF f5623j;
 
-    /* renamed from: k  reason: collision with root package name */
+    
     private final Region f5624k;
 
-    /* renamed from: l  reason: collision with root package name */
+    
     private final Region f5625l;
 
-    /* renamed from: m  reason: collision with root package name */
+    
     private k f5626m;
 
-    /* renamed from: n  reason: collision with root package name */
+    
     private final Paint f5627n;
 
-    /* renamed from: o  reason: collision with root package name */
+    
     private final Paint f5628o;
 
-    /* renamed from: p  reason: collision with root package name */
+    
     private final j0.a f5629p;
 
-    /* renamed from: q  reason: collision with root package name */
+    
     private final l.b f5630q;
 
-    /* renamed from: r  reason: collision with root package name */
+    
     private final l f5631r;
 
-    /* renamed from: s  reason: collision with root package name */
+    
     private PorterDuffColorFilter f5632s;
 
-    /* renamed from: t  reason: collision with root package name */
+    
     private PorterDuffColorFilter f5633t;
 
-    /* renamed from: u  reason: collision with root package name */
+    
     private int f5634u;
 
-    /* renamed from: v  reason: collision with root package name */
+    
     private final RectF f5635v;
 
-    /* renamed from: w  reason: collision with root package name */
+    
     private boolean f5636w;
 
     class a implements l.b {
@@ -126,8 +126,8 @@ public class g extends Drawable implements androidx.core.graphics.drawable.b, n 
 
     class b implements k.c {
 
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ float f5638a;
+        
+        final  float f5638a;
 
         b(float f2) {
             this.f5638a = f2;
@@ -143,70 +143,70 @@ public class g extends Drawable implements androidx.core.graphics.drawable.b, n 
 
     protected static class c extends Drawable.ConstantState {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         k f5640a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         C0212a f5641b;
 
-        /* renamed from: c  reason: collision with root package name */
+        
         ColorFilter f5642c;
 
-        /* renamed from: d  reason: collision with root package name */
+        
         ColorStateList f5643d = null;
 
-        /* renamed from: e  reason: collision with root package name */
+        
         ColorStateList f5644e = null;
 
-        /* renamed from: f  reason: collision with root package name */
+        
         ColorStateList f5645f = null;
 
-        /* renamed from: g  reason: collision with root package name */
+        
         ColorStateList f5646g = null;
 
-        /* renamed from: h  reason: collision with root package name */
+        
         PorterDuff.Mode f5647h = PorterDuff.Mode.SRC_IN;
 
-        /* renamed from: i  reason: collision with root package name */
+        
         Rect f5648i = null;
 
-        /* renamed from: j  reason: collision with root package name */
+        
         float f5649j = 1.0f;
 
-        /* renamed from: k  reason: collision with root package name */
+        
         float f5650k = 1.0f;
 
-        /* renamed from: l  reason: collision with root package name */
+        
         float f5651l;
 
-        /* renamed from: m  reason: collision with root package name */
+        
         int f5652m = 255;
 
-        /* renamed from: n  reason: collision with root package name */
+        
         float f5653n = 0.0f;
 
-        /* renamed from: o  reason: collision with root package name */
+        
         float f5654o = 0.0f;
 
-        /* renamed from: p  reason: collision with root package name */
+        
         float f5655p = 0.0f;
 
-        /* renamed from: q  reason: collision with root package name */
+        
         int f5656q = 0;
 
-        /* renamed from: r  reason: collision with root package name */
+        
         int f5657r = 0;
 
-        /* renamed from: s  reason: collision with root package name */
+        
         int f5658s = 0;
 
-        /* renamed from: t  reason: collision with root package name */
+        
         int f5659t = 0;
 
-        /* renamed from: u  reason: collision with root package name */
+        
         boolean f5660u = false;
 
-        /* renamed from: v  reason: collision with root package name */
+        
         Paint.Style f5661v = Paint.Style.FILL_AND_STROKE;
 
         public c(c cVar) {
@@ -652,7 +652,7 @@ public class g extends Drawable implements androidx.core.graphics.drawable.b, n 
         return this.f5624k;
     }
 
-    /* access modifiers changed from: protected */
+    
     public final void h(RectF rectF, Path path) {
         l lVar = this.f5631r;
         c cVar = this.f5614a;
@@ -677,7 +677,7 @@ public class g extends Drawable implements androidx.core.graphics.drawable.b, n 
         return false;
     }
 
-    /* access modifiers changed from: protected */
+    
     public int l(int i2) {
         float F2 = F() + x();
         C0212a aVar = this.f5614a.f5641b;
@@ -692,13 +692,13 @@ public class g extends Drawable implements androidx.core.graphics.drawable.b, n 
         return this;
     }
 
-    /* access modifiers changed from: protected */
+    
     public void onBoundsChange(Rect rect) {
         this.f5618e = true;
         super.onBoundsChange(rect);
     }
 
-    /* access modifiers changed from: protected */
+    
     public boolean onStateChange(int[] iArr) {
         boolean z2;
         boolean b02 = b0(iArr);
@@ -714,17 +714,17 @@ public class g extends Drawable implements androidx.core.graphics.drawable.b, n 
         return z2;
     }
 
-    /* access modifiers changed from: protected */
+    
     public void p(Canvas canvas, Paint paint, Path path, RectF rectF) {
         q(canvas, paint, path, this.f5614a.f5640a, rectF);
     }
 
-    /* access modifiers changed from: protected */
+    
     public void r(Canvas canvas) {
         q(canvas, this.f5628o, this.f5621h, this.f5626m, t());
     }
 
-    /* access modifiers changed from: protected */
+    
     public RectF s() {
         this.f5622i.set(getBounds());
         return this.f5622i;

@@ -6,19 +6,19 @@ import android.util.AttributeSet;
 import android.util.StateSet;
 import g.C0238b;
 
-/* renamed from: g.e  reason: case insensitive filesystem */
+
 public abstract class C0241e extends C0238b {
 
-    /* renamed from: m  reason: collision with root package name */
+    
     private a f5472m;
 
-    /* renamed from: n  reason: collision with root package name */
+    
     private boolean f5473n;
 
-    /* renamed from: g.e$a */
+    
     static class a extends C0238b.d {
 
-        /* renamed from: J  reason: collision with root package name */
+        
         int[][] f5474J;
 
         a(a aVar, C0241e eVar, Resources resources) {
@@ -30,7 +30,7 @@ public abstract class C0241e extends C0238b {
             }
         }
 
-        /* access modifiers changed from: package-private */
+        
         public int A(int[] iArr) {
             int[][] iArr2 = this.f5474J;
             int h2 = h();
@@ -49,10 +49,10 @@ public abstract class C0241e extends C0238b {
             this.f5474J = iArr;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public abstract void r();
 
-        /* access modifiers changed from: package-private */
+        
         public int z(int[] iArr, Drawable drawable) {
             int a2 = a(drawable);
             this.f5474J[a2] = iArr;
@@ -71,7 +71,7 @@ public abstract class C0241e extends C0238b {
         onStateChange(getState());
     }
 
-    /* access modifiers changed from: package-private */
+    
     public void h(C0238b.d dVar) {
         super.h(dVar);
         if (dVar instanceof a) {
@@ -79,7 +79,7 @@ public abstract class C0241e extends C0238b {
         }
     }
 
-    /* access modifiers changed from: package-private */
+    
     public int[] j(AttributeSet attributeSet) {
         int attributeCount = attributeSet.getAttributeCount();
         int[] iArr = new int[attributeCount];
@@ -106,6 +106,6 @@ public abstract class C0241e extends C0238b {
         return this;
     }
 
-    /* access modifiers changed from: protected */
+    
     public abstract boolean onStateChange(int[] iArr);
 }

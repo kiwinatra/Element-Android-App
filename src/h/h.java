@@ -7,7 +7,7 @@ import androidx.emoji2.text.f;
 
 class h implements TransformationMethod {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final TransformationMethod f97a;
 
     h(TransformationMethod transformationMethod) {

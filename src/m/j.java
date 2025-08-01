@@ -5,46 +5,46 @@ import m.C0257b;
 
 public class j implements C0257b.a {
 
-    /* renamed from: n  reason: collision with root package name */
+    
     private static float f5892n = 0.001f;
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final int f5893a = -1;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private int f5894b = 16;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private int f5895c = 16;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     int[] f5896d = new int[16];
 
-    /* renamed from: e  reason: collision with root package name */
+    
     int[] f5897e = new int[16];
 
-    /* renamed from: f  reason: collision with root package name */
+    
     int[] f5898f = new int[16];
 
-    /* renamed from: g  reason: collision with root package name */
+    
     float[] f5899g = new float[16];
 
-    /* renamed from: h  reason: collision with root package name */
+    
     int[] f5900h = new int[16];
 
-    /* renamed from: i  reason: collision with root package name */
+    
     int[] f5901i = new int[16];
 
-    /* renamed from: j  reason: collision with root package name */
+    
     int f5902j = 0;
 
-    /* renamed from: k  reason: collision with root package name */
+    
     int f5903k = -1;
 
-    /* renamed from: l  reason: collision with root package name */
+    
     private final C0257b f5904l;
 
-    /* renamed from: m  reason: collision with root package name */
+    
     protected final C0258c f5905m;
 
     j(C0257b bVar, C0258c cVar) {
@@ -131,49 +131,11 @@ public class j implements C0257b.a {
         l(iVar, n2);
     }
 
-    /* JADX WARNING: Removed duplicated region for block: B:14:0x0033  */
-    /* JADX WARNING: Removed duplicated region for block: B:20:? A[RETURN, SYNTHETIC] */
-    /* Code decompiled incorrectly, please refer to instructions dump. */
+    
+    
+    
     private void r(m.i r6) {
-        /*
-            r5 = this;
-            int r6 = r6.f5871c
-            int r0 = r5.f5895c
-            int r0 = r6 % r0
-            int[] r1 = r5.f5896d
-            r2 = r1[r0]
-            r3 = -1
-            if (r2 != r3) goto L_0x000e
-            return
-        L_0x000e:
-            int[] r4 = r5.f5898f
-            r4 = r4[r2]
-            if (r4 != r6) goto L_0x001d
-            int[] r6 = r5.f5897e
-            r4 = r6[r2]
-            r1[r0] = r4
-            r6[r2] = r3
-            goto L_0x0039
-        L_0x001d:
-            int[] r0 = r5.f5897e
-            r1 = r0[r2]
-            if (r1 == r3) goto L_0x002b
-            int[] r4 = r5.f5898f
-            r4 = r4[r1]
-            if (r4 == r6) goto L_0x002b
-            r2 = r1
-            goto L_0x001d
-        L_0x002b:
-            if (r1 == r3) goto L_0x0039
-            int[] r4 = r5.f5898f
-            r4 = r4[r1]
-            if (r4 != r6) goto L_0x0039
-            r6 = r0[r1]
-            r0[r2] = r6
-            r0[r1] = r3
-        L_0x0039:
-            return
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: m.j.r(m.i):void");
     }
 
@@ -387,48 +349,10 @@ public class j implements C0257b.a {
         return this.f5902j;
     }
 
-    /* JADX WARNING: Removed duplicated region for block: B:17:0x0032 A[RETURN] */
-    /* Code decompiled incorrectly, please refer to instructions dump. */
+    
+    
     public int p(m.i r4) {
-        /*
-            r3 = this;
-            int r0 = r3.f5902j
-            r1 = -1
-            if (r0 == 0) goto L_0x0033
-            if (r4 != 0) goto L_0x0008
-            goto L_0x0033
-        L_0x0008:
-            int r4 = r4.f5871c
-            int r0 = r3.f5895c
-            int r0 = r4 % r0
-            int[] r2 = r3.f5896d
-            r0 = r2[r0]
-            if (r0 != r1) goto L_0x0015
-            return r1
-        L_0x0015:
-            int[] r2 = r3.f5898f
-            r2 = r2[r0]
-            if (r2 != r4) goto L_0x001c
-            return r0
-        L_0x001c:
-            int[] r2 = r3.f5897e
-            r0 = r2[r0]
-            if (r0 == r1) goto L_0x0029
-            int[] r2 = r3.f5898f
-            r2 = r2[r0]
-            if (r2 == r4) goto L_0x0029
-            goto L_0x001c
-        L_0x0029:
-            if (r0 != r1) goto L_0x002c
-            return r1
-        L_0x002c:
-            int[] r2 = r3.f5898f
-            r2 = r2[r0]
-            if (r2 != r4) goto L_0x0033
-            return r0
-        L_0x0033:
-            return r1
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: m.j.p(m.i):int");
     }
 

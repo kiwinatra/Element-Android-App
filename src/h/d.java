@@ -11,18 +11,18 @@ import java.lang.ref.WeakReference;
 
 final class d implements InputFilter {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final TextView f79a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private f.C0042f f80b;
 
     private static class a extends f.C0042f {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private final Reference f81a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         private final Reference f82b;
 
         a(TextView textView, d dVar) {

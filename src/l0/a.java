@@ -4,15 +4,15 @@ import android.view.View;
 import com.google.android.material.sidesheet.SideSheetBehavior;
 import y.L;
 
-public final /* synthetic */ class a implements L {
+public final  class a implements L {
 
-    /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ SideSheetBehavior f5800a;
+    
+    public final  SideSheetBehavior f5800a;
 
-    /* renamed from: b  reason: collision with root package name */
-    public final /* synthetic */ int f5801b;
+    
+    public final  int f5801b;
 
-    public /* synthetic */ a(SideSheetBehavior sideSheetBehavior, int i2) {
+    public  a(SideSheetBehavior sideSheetBehavior, int i2) {
         this.f5800a = sideSheetBehavior;
         this.f5801b = i2;
     }

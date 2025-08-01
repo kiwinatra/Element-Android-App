@@ -5,12 +5,12 @@ import androidx.lifecycle.j;
 import androidx.lifecycle.l;
 import androidx.savedstate.a;
 
-public final /* synthetic */ class b implements j {
+public final  class b implements j {
 
-    /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ a f155a;
+    
+    public final  a f155a;
 
-    public /* synthetic */ b(a aVar) {
+    public  b(a aVar) {
         this.f155a = aVar;
     }
 

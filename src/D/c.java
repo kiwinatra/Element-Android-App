@@ -14,76 +14,76 @@ import java.util.Arrays;
 
 public class c {
 
-    /* renamed from: x  reason: collision with root package name */
+    
     private static final Interpolator f31x = new a();
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private int f32a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private int f33b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private int f34c = -1;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private float[] f35d;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     private float[] f36e;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     private float[] f37f;
 
-    /* renamed from: g  reason: collision with root package name */
+    
     private float[] f38g;
 
-    /* renamed from: h  reason: collision with root package name */
+    
     private int[] f39h;
 
-    /* renamed from: i  reason: collision with root package name */
+    
     private int[] f40i;
 
-    /* renamed from: j  reason: collision with root package name */
+    
     private int[] f41j;
 
-    /* renamed from: k  reason: collision with root package name */
+    
     private int f42k;
 
-    /* renamed from: l  reason: collision with root package name */
+    
     private VelocityTracker f43l;
 
-    /* renamed from: m  reason: collision with root package name */
+    
     private float f44m;
 
-    /* renamed from: n  reason: collision with root package name */
+    
     private float f45n;
 
-    /* renamed from: o  reason: collision with root package name */
+    
     private int f46o;
 
-    /* renamed from: p  reason: collision with root package name */
+    
     private final int f47p;
 
-    /* renamed from: q  reason: collision with root package name */
+    
     private int f48q;
 
-    /* renamed from: r  reason: collision with root package name */
+    
     private OverScroller f49r;
 
-    /* renamed from: s  reason: collision with root package name */
+    
     private final C0004c f50s;
 
-    /* renamed from: t  reason: collision with root package name */
+    
     private View f51t;
 
-    /* renamed from: u  reason: collision with root package name */
+    
     private boolean f52u;
 
-    /* renamed from: v  reason: collision with root package name */
+    
     private final ViewGroup f53v;
 
-    /* renamed from: w  reason: collision with root package name */
+    
     private final Runnable f54w = new b();
 
     class a implements Interpolator {
@@ -594,7 +594,7 @@ public class c {
         }
     }
 
-    /* access modifiers changed from: package-private */
+    
     public void K(int i2) {
         this.f53v.removeCallbacks(this.f54w);
         if (this.f32a != i2) {
@@ -625,177 +625,10 @@ public class c {
         throw new IllegalStateException("Cannot settleCapturedViewAt outside of a call to Callback#onViewReleased");
     }
 
-    /* JADX WARNING: Code restructure failed: missing block: B:45:0x00dd, code lost:
-        if (r12 != r11) goto L_0x00e6;
-     */
-    /* Code decompiled incorrectly, please refer to instructions dump. */
+    
+    
     public boolean P(android.view.MotionEvent r17) {
-        /*
-            r16 = this;
-            r0 = r16
-            r1 = r17
-            int r2 = r17.getActionMasked()
-            int r3 = r17.getActionIndex()
-            if (r2 != 0) goto L_0x0011
-            r16.a()
-        L_0x0011:
-            android.view.VelocityTracker r4 = r0.f43l
-            if (r4 != 0) goto L_0x001b
-            android.view.VelocityTracker r4 = android.view.VelocityTracker.obtain()
-            r0.f43l = r4
-        L_0x001b:
-            android.view.VelocityTracker r4 = r0.f43l
-            r4.addMovement(r1)
-            r4 = 2
-            r6 = 1
-            if (r2 == 0) goto L_0x0104
-            if (r2 == r6) goto L_0x00ff
-            if (r2 == r4) goto L_0x0070
-            r7 = 3
-            if (r2 == r7) goto L_0x00ff
-            r7 = 5
-            if (r2 == r7) goto L_0x003c
-            r4 = 6
-            if (r2 == r4) goto L_0x0034
-        L_0x0031:
-            r5 = 0
-            goto L_0x0135
-        L_0x0034:
-            int r1 = r1.getPointerId(r3)
-            r0.j(r1)
-            goto L_0x0031
-        L_0x003c:
-            int r2 = r1.getPointerId(r3)
-            float r7 = r1.getX(r3)
-            float r1 = r1.getY(r3)
-            r0.I(r7, r1, r2)
-            int r3 = r0.f32a
-            if (r3 != 0) goto L_0x0060
-            int[] r1 = r0.f39h
-            r1 = r1[r2]
-            int r3 = r0.f48q
-            r4 = r1 & r3
-            if (r4 == 0) goto L_0x0031
-            D.c$c r4 = r0.f50s
-            r1 = r1 & r3
-            r4.h(r1, r2)
-            goto L_0x0031
-        L_0x0060:
-            if (r3 != r4) goto L_0x0031
-            int r3 = (int) r7
-            int r1 = (int) r1
-            android.view.View r1 = r0.t(r3, r1)
-            android.view.View r3 = r0.f51t
-            if (r1 != r3) goto L_0x0031
-            r0.R(r1, r2)
-            goto L_0x0031
-        L_0x0070:
-            float[] r2 = r0.f35d
-            if (r2 == 0) goto L_0x0031
-            float[] r2 = r0.f36e
-            if (r2 != 0) goto L_0x0079
-            goto L_0x0031
-        L_0x0079:
-            int r2 = r17.getPointerCount()
-            r3 = 0
-        L_0x007e:
-            if (r3 >= r2) goto L_0x00fa
-            int r4 = r1.getPointerId(r3)
-            boolean r7 = r0.D(r4)
-            if (r7 != 0) goto L_0x008c
-            goto L_0x00f7
-        L_0x008c:
-            float r7 = r1.getX(r3)
-            float r8 = r1.getY(r3)
-            float[] r9 = r0.f35d
-            r9 = r9[r4]
-            float r9 = r7 - r9
-            float[] r10 = r0.f36e
-            r10 = r10[r4]
-            float r10 = r8 - r10
-            int r7 = (int) r7
-            int r8 = (int) r8
-            android.view.View r7 = r0.t(r7, r8)
-            if (r7 == 0) goto L_0x00b0
-            boolean r8 = r0.f(r7, r9, r10)
-            if (r8 == 0) goto L_0x00b0
-            r8 = 1
-            goto L_0x00b1
-        L_0x00b0:
-            r8 = 0
-        L_0x00b1:
-            if (r8 == 0) goto L_0x00e6
-            int r11 = r7.getLeft()
-            int r12 = (int) r9
-            int r13 = r11 + r12
-            D.c$c r14 = r0.f50s
-            int r12 = r14.a(r7, r13, r12)
-            int r13 = r7.getTop()
-            int r14 = (int) r10
-            int r15 = r13 + r14
-            D.c$c r5 = r0.f50s
-            int r5 = r5.b(r7, r15, r14)
-            D.c$c r14 = r0.f50s
-            int r14 = r14.d(r7)
-            D.c$c r15 = r0.f50s
-            int r15 = r15.e(r7)
-            if (r14 == 0) goto L_0x00df
-            if (r14 <= 0) goto L_0x00e6
-            if (r12 != r11) goto L_0x00e6
-        L_0x00df:
-            if (r15 == 0) goto L_0x00fa
-            if (r15 <= 0) goto L_0x00e6
-            if (r5 != r13) goto L_0x00e6
-            goto L_0x00fa
-        L_0x00e6:
-            r0.H(r9, r10, r4)
-            int r5 = r0.f32a
-            if (r5 != r6) goto L_0x00ee
-            goto L_0x00fa
-        L_0x00ee:
-            if (r8 == 0) goto L_0x00f7
-            boolean r4 = r0.R(r7, r4)
-            if (r4 == 0) goto L_0x00f7
-            goto L_0x00fa
-        L_0x00f7:
-            int r3 = r3 + 1
-            goto L_0x007e
-        L_0x00fa:
-            r16.J(r17)
-            goto L_0x0031
-        L_0x00ff:
-            r16.a()
-            goto L_0x0031
-        L_0x0104:
-            float r2 = r17.getX()
-            float r3 = r17.getY()
-            r5 = 0
-            int r1 = r1.getPointerId(r5)
-            r0.I(r2, r3, r1)
-            int r2 = (int) r2
-            int r3 = (int) r3
-            android.view.View r2 = r0.t(r2, r3)
-            android.view.View r3 = r0.f51t
-            if (r2 != r3) goto L_0x0125
-            int r3 = r0.f32a
-            if (r3 != r4) goto L_0x0125
-            r0.R(r2, r1)
-        L_0x0125:
-            int[] r2 = r0.f39h
-            r2 = r2[r1]
-            int r3 = r0.f48q
-            r4 = r2 & r3
-            if (r4 == 0) goto L_0x0135
-            D.c$c r4 = r0.f50s
-            r2 = r2 & r3
-            r4.h(r2, r1)
-        L_0x0135:
-            int r1 = r0.f32a
-            if (r1 != r6) goto L_0x013a
-            r5 = 1
-        L_0x013a:
-            return r5
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: D.c.P(android.view.MotionEvent):boolean");
     }
 
@@ -809,7 +642,7 @@ public class c {
         return u2;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public boolean R(View view, int i2) {
         if (view == this.f51t && this.f34c == i2) {
             return true;
@@ -949,7 +782,7 @@ public class c {
         return this.f33b;
     }
 
-    /* renamed from: D.c$c  reason: collision with other inner class name */
+    
     public static abstract class C0004c {
         public abstract int a(View view, int i2, int i3);
 

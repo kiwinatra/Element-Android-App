@@ -1,7 +1,7 @@
 package k0;
 
 public class f {
-    /* access modifiers changed from: package-private */
+
     public boolean a() {
         return false;
     }

@@ -9,40 +9,40 @@ import java.util.List;
 
 public class m {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     public float f5707a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     public float f5708b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     public float f5709c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     public float f5710d;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     public float f5711e;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     public float f5712f;
 
-    /* renamed from: g  reason: collision with root package name */
+    
     private final List f5713g = new ArrayList();
 
-    /* renamed from: h  reason: collision with root package name */
+    
     private final List f5714h = new ArrayList();
 
-    /* renamed from: i  reason: collision with root package name */
+    
     private boolean f5715i;
 
     class a extends g {
 
-        /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ List f5716c;
+        
+        final  List f5716c;
 
-        /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Matrix f5717d;
+        
+        final  Matrix f5717d;
 
         a(List list, Matrix matrix) {
             this.f5716c = list;
@@ -58,7 +58,7 @@ public class m {
 
     static class b extends g {
 
-        /* renamed from: c  reason: collision with root package name */
+        
         private final d f5719c;
 
         public b(d dVar) {
@@ -74,13 +74,13 @@ public class m {
 
     static class c extends g {
 
-        /* renamed from: c  reason: collision with root package name */
+        
         private final e f5720c;
 
-        /* renamed from: d  reason: collision with root package name */
+        
         private final float f5721d;
 
-        /* renamed from: e  reason: collision with root package name */
+        
         private final float f5722e;
 
         public c(e eVar, float f2, float f3) {
@@ -97,7 +97,7 @@ public class m {
             aVar.b(canvas, this.f5734a, rectF, i2);
         }
 
-        /* access modifiers changed from: package-private */
+        
         public float c() {
             return (float) Math.toDegrees(Math.atan((double) ((this.f5720c.f5731c - this.f5722e) / (this.f5720c.f5730b - this.f5721d))));
         }
@@ -105,25 +105,25 @@ public class m {
 
     public static class d extends f {
 
-        /* renamed from: h  reason: collision with root package name */
+        
         private static final RectF f5723h = new RectF();
 
-        /* renamed from: b  reason: collision with root package name */
+        
         public float f5724b;
 
-        /* renamed from: c  reason: collision with root package name */
+        
         public float f5725c;
 
-        /* renamed from: d  reason: collision with root package name */
+        
         public float f5726d;
 
-        /* renamed from: e  reason: collision with root package name */
+        
         public float f5727e;
 
-        /* renamed from: f  reason: collision with root package name */
+        
         public float f5728f;
 
-        /* renamed from: g  reason: collision with root package name */
+        
         public float f5729g;
 
         public d(float f2, float f3, float f4, float f5) {
@@ -133,32 +133,32 @@ public class m {
             p(f5);
         }
 
-        /* access modifiers changed from: private */
+        
         public float j() {
             return this.f5727e;
         }
 
-        /* access modifiers changed from: private */
+        
         public float k() {
             return this.f5724b;
         }
 
-        /* access modifiers changed from: private */
+        
         public float l() {
             return this.f5726d;
         }
 
-        /* access modifiers changed from: private */
+        
         public float m() {
             return this.f5728f;
         }
 
-        /* access modifiers changed from: private */
+        
         public float n() {
             return this.f5729g;
         }
 
-        /* access modifiers changed from: private */
+        
         public float o() {
             return this.f5725c;
         }
@@ -175,12 +175,12 @@ public class m {
             this.f5726d = f2;
         }
 
-        /* access modifiers changed from: private */
+        
         public void s(float f2) {
             this.f5728f = f2;
         }
 
-        /* access modifiers changed from: private */
+        
         public void t(float f2) {
             this.f5729g = f2;
         }
@@ -201,13 +201,13 @@ public class m {
     }
 
     public static class e extends f {
-        /* access modifiers changed from: private */
+        
 
-        /* renamed from: b  reason: collision with root package name */
+        
         public float f5730b;
-        /* access modifiers changed from: private */
+        
 
-        /* renamed from: c  reason: collision with root package name */
+        
         public float f5731c;
 
         public void a(Matrix matrix, Path path) {
@@ -221,7 +221,7 @@ public class m {
 
     public static abstract class f {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         protected final Matrix f5732a = new Matrix();
 
         public abstract void a(Matrix matrix, Path path);
@@ -229,10 +229,10 @@ public class m {
 
     static abstract class g {
 
-        /* renamed from: b  reason: collision with root package name */
+        
         static final Matrix f5733b = new Matrix();
 
-        /* renamed from: a  reason: collision with root package name */
+        
         final Matrix f5734a = new Matrix();
 
         g() {
@@ -335,33 +335,33 @@ public class m {
         }
     }
 
-    /* access modifiers changed from: package-private */
+    
     public boolean e() {
         return this.f5715i;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public g f(Matrix matrix) {
         b(h());
         return new a(new ArrayList(this.f5714h), new Matrix(matrix));
     }
 
-    /* access modifiers changed from: package-private */
+    
     public float i() {
         return this.f5709c;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public float j() {
         return this.f5710d;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public float k() {
         return this.f5707a;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public float l() {
         return this.f5708b;
     }

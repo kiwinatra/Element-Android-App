@@ -11,46 +11,46 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.util.SparseArray;
 
-/* renamed from: g.b  reason: case insensitive filesystem */
+
 public abstract class C0238b extends Drawable implements Drawable.Callback {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private d f5409a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private Rect f5410b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private Drawable f5411c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private Drawable f5412d;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     private int f5413e = 255;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     private boolean f5414f;
 
-    /* renamed from: g  reason: collision with root package name */
+    
     private int f5415g = -1;
 
-    /* renamed from: h  reason: collision with root package name */
+    
     private boolean f5416h;
 
-    /* renamed from: i  reason: collision with root package name */
+    
     private Runnable f5417i;
 
-    /* renamed from: j  reason: collision with root package name */
+    
     private long f5418j;
 
-    /* renamed from: k  reason: collision with root package name */
+    
     private long f5419k;
 
-    /* renamed from: l  reason: collision with root package name */
+    
     private c f5420l;
 
-    /* renamed from: g.b$a */
+    
     class a implements Runnable {
         a() {
         }
@@ -61,7 +61,7 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
         }
     }
 
-    /* renamed from: g.b$b  reason: collision with other inner class name */
+    
     private static class C0073b {
         public static boolean a(Drawable.ConstantState constantState) {
             return constantState.canApplyTheme();
@@ -76,112 +76,112 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
         }
     }
 
-    /* renamed from: g.b$d */
+    
     static abstract class d extends Drawable.ConstantState {
 
-        /* renamed from: A  reason: collision with root package name */
+        
         int f5423A = 0;
 
-        /* renamed from: B  reason: collision with root package name */
+        
         int f5424B = 0;
 
-        /* renamed from: C  reason: collision with root package name */
+        
         boolean f5425C;
 
-        /* renamed from: D  reason: collision with root package name */
+        
         ColorFilter f5426D;
 
-        /* renamed from: E  reason: collision with root package name */
+        
         boolean f5427E;
 
-        /* renamed from: F  reason: collision with root package name */
+        
         ColorStateList f5428F;
 
-        /* renamed from: G  reason: collision with root package name */
+        
         PorterDuff.Mode f5429G;
 
-        /* renamed from: H  reason: collision with root package name */
+        
         boolean f5430H;
 
-        /* renamed from: I  reason: collision with root package name */
+        
         boolean f5431I;
 
-        /* renamed from: a  reason: collision with root package name */
+        
         final C0238b f5432a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         Resources f5433b;
 
-        /* renamed from: c  reason: collision with root package name */
+        
         int f5434c;
 
-        /* renamed from: d  reason: collision with root package name */
+        
         int f5435d;
 
-        /* renamed from: e  reason: collision with root package name */
+        
         int f5436e;
 
-        /* renamed from: f  reason: collision with root package name */
+        
         SparseArray f5437f;
 
-        /* renamed from: g  reason: collision with root package name */
+        
         Drawable[] f5438g;
 
-        /* renamed from: h  reason: collision with root package name */
+        
         int f5439h;
 
-        /* renamed from: i  reason: collision with root package name */
+        
         boolean f5440i = false;
 
-        /* renamed from: j  reason: collision with root package name */
+        
         boolean f5441j;
 
-        /* renamed from: k  reason: collision with root package name */
+        
         Rect f5442k;
 
-        /* renamed from: l  reason: collision with root package name */
+        
         boolean f5443l = false;
 
-        /* renamed from: m  reason: collision with root package name */
+        
         boolean f5444m;
 
-        /* renamed from: n  reason: collision with root package name */
+        
         int f5445n;
 
-        /* renamed from: o  reason: collision with root package name */
+        
         int f5446o;
 
-        /* renamed from: p  reason: collision with root package name */
+        
         int f5447p;
 
-        /* renamed from: q  reason: collision with root package name */
+        
         int f5448q;
 
-        /* renamed from: r  reason: collision with root package name */
+        
         boolean f5449r;
 
-        /* renamed from: s  reason: collision with root package name */
+        
         int f5450s;
 
-        /* renamed from: t  reason: collision with root package name */
+        
         boolean f5451t;
 
-        /* renamed from: u  reason: collision with root package name */
+        
         boolean f5452u;
 
-        /* renamed from: v  reason: collision with root package name */
+        
         boolean f5453v;
 
-        /* renamed from: w  reason: collision with root package name */
+        
         boolean f5454w;
 
-        /* renamed from: x  reason: collision with root package name */
+        
         boolean f5455x = true;
 
-        /* renamed from: y  reason: collision with root package name */
+        
         boolean f5456y;
 
-        /* renamed from: z  reason: collision with root package name */
+        
         int f5457z;
 
         d(d dVar, C0238b bVar, Resources resources) {
@@ -312,7 +312,7 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
             return i2;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public final void b(Resources.Theme theme) {
             if (theme != null) {
                 e();
@@ -364,7 +364,7 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
             return false;
         }
 
-        /* access modifiers changed from: protected */
+        
         public void d() {
             this.f5444m = true;
             e();
@@ -395,7 +395,7 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
             }
         }
 
-        /* access modifiers changed from: package-private */
+        
         public final int f() {
             return this.f5438g.length;
         }
@@ -526,7 +526,7 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
             this.f5438g = drawableArr;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public void p() {
             this.f5449r = false;
             this.f5451t = false;
@@ -536,7 +536,7 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
             return this.f5443l;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public abstract void r();
 
         public final void t(boolean z2) {
@@ -551,7 +551,7 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
             this.f5424B = i2;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public final boolean w(int i2, int i3) {
             boolean z2;
             int i4 = this.f5439h;
@@ -578,7 +578,7 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
             this.f5440i = z2;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public final void y(Resources resources) {
             if (resources != null) {
                 this.f5433b = resources;
@@ -651,86 +651,13 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
         return i2;
     }
 
-    /* access modifiers changed from: package-private */
-    /* JADX WARNING: Removed duplicated region for block: B:12:0x003d  */
-    /* JADX WARNING: Removed duplicated region for block: B:21:0x0066 A[ADDED_TO_REGION] */
-    /* JADX WARNING: Removed duplicated region for block: B:24:? A[ADDED_TO_REGION, RETURN, SYNTHETIC] */
-    /* Code decompiled incorrectly, please refer to instructions dump. */
+    
+    
+    
+    
+    
     public void a(boolean r14) {
-        /*
-            r13 = this;
-            r0 = 1
-            r13.f5414f = r0
-            long r1 = android.os.SystemClock.uptimeMillis()
-            android.graphics.drawable.Drawable r3 = r13.f5411c
-            r4 = 255(0xff, double:1.26E-321)
-            r6 = 0
-            r8 = 0
-            if (r3 == 0) goto L_0x001f
-            long r9 = r13.f5418j
-            int r11 = (r9 > r6 ? 1 : (r9 == r6 ? 0 : -1))
-            if (r11 == 0) goto L_0x0038
-            int r11 = (r9 > r1 ? 1 : (r9 == r1 ? 0 : -1))
-            if (r11 > 0) goto L_0x0022
-            int r9 = r13.f5413e
-            r3.setAlpha(r9)
-        L_0x001f:
-            r13.f5418j = r6
-            goto L_0x0038
-        L_0x0022:
-            long r9 = r9 - r1
-            long r9 = r9 * r4
-            int r10 = (int) r9
-            g.b$d r9 = r13.f5409a
-            int r9 = r9.f5423A
-            int r10 = r10 / r9
-            int r9 = 255 - r10
-            int r10 = r13.f5413e
-            int r9 = r9 * r10
-            int r9 = r9 / 255
-            r3.setAlpha(r9)
-            r3 = 1
-            goto L_0x0039
-        L_0x0038:
-            r3 = 0
-        L_0x0039:
-            android.graphics.drawable.Drawable r9 = r13.f5412d
-            if (r9 == 0) goto L_0x004d
-            long r10 = r13.f5419k
-            int r12 = (r10 > r6 ? 1 : (r10 == r6 ? 0 : -1))
-            if (r12 == 0) goto L_0x0063
-            int r12 = (r10 > r1 ? 1 : (r10 == r1 ? 0 : -1))
-            if (r12 > 0) goto L_0x0050
-            r9.setVisible(r8, r8)
-            r0 = 0
-            r13.f5412d = r0
-        L_0x004d:
-            r13.f5419k = r6
-            goto L_0x0063
-        L_0x0050:
-            long r10 = r10 - r1
-            long r10 = r10 * r4
-            int r3 = (int) r10
-            g.b$d r4 = r13.f5409a
-            int r4 = r4.f5424B
-            int r3 = r3 / r4
-            int r4 = r13.f5413e
-            int r3 = r3 * r4
-            int r3 = r3 / 255
-            r9.setAlpha(r3)
-            goto L_0x0064
-        L_0x0063:
-            r0 = r3
-        L_0x0064:
-            if (r14 == 0) goto L_0x0070
-            if (r0 == 0) goto L_0x0070
-            java.lang.Runnable r14 = r13.f5417i
-            r3 = 16
-            long r1 = r1 + r3
-            r13.scheduleSelf(r14, r1)
-        L_0x0070:
-            return
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: g.C0238b.a(boolean):void");
     }
 
@@ -738,10 +665,10 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
         this.f5409a.b(theme);
     }
 
-    /* access modifiers changed from: package-private */
+    
     public abstract d b();
 
-    /* access modifiers changed from: package-private */
+    
     public int c() {
         return this.f5415g;
     }
@@ -761,90 +688,12 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
         }
     }
 
-    /* access modifiers changed from: package-private */
-    /* JADX WARNING: Removed duplicated region for block: B:31:0x006b  */
-    /* JADX WARNING: Removed duplicated region for block: B:32:0x0073  */
-    /* Code decompiled incorrectly, please refer to instructions dump. */
+    
+    
+    
+    
     public boolean g(int r10) {
-        /*
-            r9 = this;
-            int r0 = r9.f5415g
-            r1 = 0
-            if (r10 != r0) goto L_0x0006
-            return r1
-        L_0x0006:
-            long r2 = android.os.SystemClock.uptimeMillis()
-            g.b$d r0 = r9.f5409a
-            int r0 = r0.f5424B
-            r4 = 0
-            r5 = 0
-            if (r0 <= 0) goto L_0x002e
-            android.graphics.drawable.Drawable r0 = r9.f5412d
-            if (r0 == 0) goto L_0x001a
-            r0.setVisible(r1, r1)
-        L_0x001a:
-            android.graphics.drawable.Drawable r0 = r9.f5411c
-            if (r0 == 0) goto L_0x0029
-            r9.f5412d = r0
-            g.b$d r0 = r9.f5409a
-            int r0 = r0.f5424B
-            long r0 = (long) r0
-            long r0 = r0 + r2
-            r9.f5419k = r0
-            goto L_0x0035
-        L_0x0029:
-            r9.f5412d = r4
-            r9.f5419k = r5
-            goto L_0x0035
-        L_0x002e:
-            android.graphics.drawable.Drawable r0 = r9.f5411c
-            if (r0 == 0) goto L_0x0035
-            r0.setVisible(r1, r1)
-        L_0x0035:
-            if (r10 < 0) goto L_0x0055
-            g.b$d r0 = r9.f5409a
-            int r1 = r0.f5439h
-            if (r10 >= r1) goto L_0x0055
-            android.graphics.drawable.Drawable r0 = r0.g(r10)
-            r9.f5411c = r0
-            r9.f5415g = r10
-            if (r0 == 0) goto L_0x005a
-            g.b$d r10 = r9.f5409a
-            int r10 = r10.f5423A
-            if (r10 <= 0) goto L_0x0051
-            long r7 = (long) r10
-            long r2 = r2 + r7
-            r9.f5418j = r2
-        L_0x0051:
-            r9.d(r0)
-            goto L_0x005a
-        L_0x0055:
-            r9.f5411c = r4
-            r10 = -1
-            r9.f5415g = r10
-        L_0x005a:
-            long r0 = r9.f5418j
-            r10 = 1
-            int r2 = (r0 > r5 ? 1 : (r0 == r5 ? 0 : -1))
-            if (r2 != 0) goto L_0x0067
-            long r0 = r9.f5419k
-            int r2 = (r0 > r5 ? 1 : (r0 == r5 ? 0 : -1))
-            if (r2 == 0) goto L_0x0079
-        L_0x0067:
-            java.lang.Runnable r0 = r9.f5417i
-            if (r0 != 0) goto L_0x0073
-            g.b$a r0 = new g.b$a
-            r0.<init>()
-            r9.f5417i = r0
-            goto L_0x0076
-        L_0x0073:
-            r9.unscheduleSelf(r0)
-        L_0x0076:
-            r9.a(r10)
-        L_0x0079:
-            r9.invalidateSelf()
-            return r10
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: g.C0238b.g(int):boolean");
     }
 
@@ -962,7 +811,7 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
         return z2;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public void h(d dVar) {
         this.f5409a = dVar;
         int i2 = this.f5415g;
@@ -976,7 +825,7 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
         this.f5412d = null;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public final void i(Resources resources) {
         this.f5409a.y(resources);
     }
@@ -1037,7 +886,7 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
         return this;
     }
 
-    /* access modifiers changed from: protected */
+    
     public void onBoundsChange(Rect rect) {
         Drawable drawable = this.f5412d;
         if (drawable != null) {
@@ -1053,7 +902,7 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
         return this.f5409a.w(i2, c());
     }
 
-    /* access modifiers changed from: protected */
+    
     public boolean onLevelChange(int i2) {
         Drawable drawable = this.f5412d;
         if (drawable != null) {
@@ -1183,10 +1032,10 @@ public abstract class C0238b extends Drawable implements Drawable.Callback {
         }
     }
 
-    /* renamed from: g.b$c */
+    
     static class c implements Drawable.Callback {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private Drawable.Callback f5422a;
 
         c() {

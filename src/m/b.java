@@ -7,7 +7,7 @@ import w0.i;
 
 public final class b implements A.b {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final f[] f133a;
 
     public b(f... fVarArr) {
@@ -15,7 +15,7 @@ public final class b implements A.b {
         this.f133a = fVarArr;
     }
 
-    public /* synthetic */ z a(Class cls) {
+    public  z a(Class cls) {
         return B.a(this, cls);
     }
 

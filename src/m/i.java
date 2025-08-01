@@ -5,58 +5,58 @@ import java.util.HashSet;
 
 public class i implements Comparable {
 
-    /* renamed from: r  reason: collision with root package name */
+    
     private static int f5868r = 1;
 
-    /* renamed from: a  reason: collision with root package name */
+    
     public boolean f5869a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private String f5870b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     public int f5871c = -1;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     int f5872d = -1;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     public int f5873e = 0;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     public float f5874f;
 
-    /* renamed from: g  reason: collision with root package name */
+    
     public boolean f5875g = false;
 
-    /* renamed from: h  reason: collision with root package name */
+    
     float[] f5876h = new float[9];
 
-    /* renamed from: i  reason: collision with root package name */
+    
     float[] f5877i = new float[9];
 
-    /* renamed from: j  reason: collision with root package name */
+    
     a f5878j;
 
-    /* renamed from: k  reason: collision with root package name */
+    
     C0257b[] f5879k = new C0257b[16];
 
-    /* renamed from: l  reason: collision with root package name */
+    
     int f5880l = 0;
 
-    /* renamed from: m  reason: collision with root package name */
+    
     public int f5881m = 0;
 
-    /* renamed from: n  reason: collision with root package name */
+    
     boolean f5882n = false;
 
-    /* renamed from: o  reason: collision with root package name */
+    
     int f5883o = -1;
 
-    /* renamed from: p  reason: collision with root package name */
+    
     float f5884p = 0.0f;
 
-    /* renamed from: q  reason: collision with root package name */
+    
     HashSet f5885q = null;
 
     public enum a {
@@ -97,7 +97,7 @@ public class i implements Comparable {
         }
     }
 
-    /* renamed from: b */
+    
     public int compareTo(i iVar) {
         return this.f5871c - iVar.f5871c;
     }

@@ -6,7 +6,6 @@ import android.view.View;
 
 public final /* synthetic */ class d implements e.c {
 
-    /* renamed from: a  reason: collision with root package name */
     public final /* synthetic */ View f1a;
 
     public /* synthetic */ d(View view) {

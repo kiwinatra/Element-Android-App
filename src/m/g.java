@@ -2,10 +2,10 @@ package m;
 
 class g implements C0261f {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final Object[] f5856a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private int f5857b;
 
     g(int i2) {

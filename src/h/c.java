@@ -9,10 +9,10 @@ import androidx.emoji2.text.f;
 
 final class c extends InputConnectionWrapper {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final TextView f77a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private final a f78b;
 
     public static class a {

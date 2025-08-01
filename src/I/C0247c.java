@@ -18,23 +18,23 @@ import androidx.core.view.C0123b;
 import java.lang.reflect.Method;
 import u.C0287b;
 
-/* renamed from: i.c  reason: case insensitive filesystem */
+
 public class C0247c extends C0246b implements MenuItem {
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private final C0287b f5546d;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     private Method f5547e;
 
-    /* renamed from: i.c$a */
+    
     private class a extends C0123b implements ActionProvider.VisibilityListener {
 
-        /* renamed from: d  reason: collision with root package name */
+        
         private C0123b.C0035b f5548d;
-        /* access modifiers changed from: private */
+        
 
-        /* renamed from: e  reason: collision with root package name */
+        
         public final ActionProvider f5549e;
 
         a(Context context, ActionProvider actionProvider) {
@@ -86,10 +86,10 @@ public class C0247c extends C0246b implements MenuItem {
         }
     }
 
-    /* renamed from: i.c$b */
+    
     static class b extends FrameLayout implements c {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         final CollapsibleActionView f5551a;
 
         b(View view) {
@@ -98,7 +98,7 @@ public class C0247c extends C0246b implements MenuItem {
             addView(view);
         }
 
-        /* access modifiers changed from: package-private */
+        
         public View a() {
             return (View) this.f5551a;
         }
@@ -112,10 +112,10 @@ public class C0247c extends C0246b implements MenuItem {
         }
     }
 
-    /* renamed from: i.c$c  reason: collision with other inner class name */
+    
     private class C0075c implements MenuItem.OnActionExpandListener {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private final MenuItem.OnActionExpandListener f5552a;
 
         C0075c(MenuItem.OnActionExpandListener onActionExpandListener) {
@@ -131,10 +131,10 @@ public class C0247c extends C0246b implements MenuItem {
         }
     }
 
-    /* renamed from: i.c$d */
+    
     private class d implements MenuItem.OnMenuItemClickListener {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private final MenuItem.OnMenuItemClickListener f5554a;
 
         d(MenuItem.OnMenuItemClickListener onMenuItemClickListener) {

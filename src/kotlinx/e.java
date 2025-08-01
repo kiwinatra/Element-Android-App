@@ -4,7 +4,6 @@ import android.window.OnBackInvokedCallback;
 
 public final /* synthetic */ class e implements OnBackInvokedCallback {
 
-    /* renamed from: a  reason: collision with root package name */
     public final /* synthetic */ b f5385a;
 
     public /* synthetic */ e(b bVar) {

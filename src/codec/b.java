@@ -1,94 +1,109 @@
-package a;
+package b;
 
-import a.C0086a;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.os.IBinder;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
-public class b implements Parcelable {
-    public static final Parcelable.Creator<b> CREATOR = new a();
+/**
+ * A message handler that can be passed between processes via Parcelable.
+ * Handles incoming messages either synchronously or via a Handler.
+ */
+public class MessageHandler implements Parcelable {
 
-    /* renamed from: a  reason: collision with root package name */
-    final boolean f299a = false;
+    private static final boolean DEFAULT_ASYNC = false;
+    
+    private final boolean mAsync;
+    private final Handler mHandler;
+    private MessageReceiver mReceiver;
+    
+    private final Object mLock = new Object();
 
-    /* renamed from: b  reason: collision with root package name */
-    final Handler f300b = null;
+    protected MessageHandler(Parcel in) {
+        IBinder binder = in.readStrongBinder();
+        mReceiver = MessageReceiver.Stub.asInterface(binder);
+        mAsync = DEFAULT_ASYNC;
+        mHandler = null;
+    }
 
-    /* renamed from: c  reason: collision with root package name */
-    C0086a f301c;
+    /**
+     * Interface for receiving messages
+     */
+    public interface MessageCallback {
+        void onMessageReceived(int messageId, @Nullable Bundle data);
+    }
 
-    class a implements Parcelable.Creator {
-        a() {
+    private static class MessageReceiverImpl extends MessageReceiver.Stub {
+        private final MessageHandler mHandler;
+
+        MessageReceiverImpl(MessageHandler handler) {
+            mHandler = handler;
         }
 
-        /* renamed from: a */
-        public b createFromParcel(Parcel parcel) {
-            return new b(parcel);
-        }
-
-        /* renamed from: b */
-        public b[] newArray(int i2) {
-            return new b[i2];
+        @Override
+        public void sendMessage(int messageId, Bundle data) {
+            mHandler.dispatchMessage(messageId, data);
         }
     }
 
-    /* renamed from: a.b$b  reason: collision with other inner class name */
-    class C0011b extends C0086a.C0009a {
-        C0011b() {
+    private class MessageDispatchTask implements Runnable {
+        private final int mMessageId;
+        private final Bundle mData;
+
+        MessageDispatchTask(int messageId, Bundle data) {
+            this.mMessageId = messageId;
+            this.mData = data;
         }
 
-        public void a(int i2, Bundle bundle) {
-            b bVar = b.this;
-            Handler handler = bVar.f300b;
-            if (handler != null) {
-                handler.post(new c(i2, bundle));
-            } else {
-                bVar.c(i2, bundle);
-            }
-        }
-    }
-
-    class c implements Runnable {
-
-        /* renamed from: a  reason: collision with root package name */
-        final int f303a;
-
-        /* renamed from: b  reason: collision with root package name */
-        final Bundle f304b;
-
-        c(int i2, Bundle bundle) {
-            this.f303a = i2;
-            this.f304b = bundle;
-        }
-
+        @Override
         public void run() {
-            b.this.c(this.f303a, this.f304b);
+            handleMessage(mMessageId, mData);
         }
     }
 
-    b(Parcel parcel) {
-        this.f301c = C0086a.C0009a.b(parcel.readStrongBinder());
+    protected void dispatchMessage(int messageId, Bundle data) {
+        if (mAsync && mHandler != null) {
+            mHandler.post(new MessageDispatchTask(messageId, data));
+        } else {
+            handleMessage(messageId, data);
+        }
     }
 
+    /**
+     * Override this to handle incoming messages
+     */
+    protected void handleMessage(int messageId, @Nullable Bundle data) {
+        // Default implementation does nothing
+    }
+
+    @Override
     public int describeContents() {
         return 0;
     }
 
-    public void writeToParcel(Parcel parcel, int i2) {
-        synchronized (this) {
-            try {
-                if (this.f301c == null) {
-                    this.f301c = new C0011b();
-                }
-                parcel.writeStrongBinder(this.f301c.asBinder());
-            } catch (Throwable th) {
-                throw th;
+    @Override
+    public void writeToParcel(@NonNull Parcel dest, int flags) {
+        synchronized (mLock) {
+            if (mReceiver == null) {
+                mReceiver = new MessageReceiverImpl(this);
             }
+            dest.writeStrongBinder(mReceiver.asBinder());
         }
     }
 
-    /* access modifiers changed from: protected */
-    public void c(int i2, Bundle bundle) {
-    }
+    public static final Parcelable.Creator<MessageHandler> CREATOR = 
+        new Parcelable.Creator<MessageHandler>() {
+            @Override
+            public MessageHandler createFromParcel(Parcel source) {
+                return new MessageHandler(source);
+            }
+
+            @Override
+            public MessageHandler[] newArray(int size) {
+                return new MessageHandler[size];
+            }
+        };
 }

@@ -21,28 +21,28 @@ import l.h;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* renamed from: g.a  reason: case insensitive filesystem */
+
 public class C0237a extends C0241e implements androidx.core.graphics.drawable.b {
 
-    /* renamed from: o  reason: collision with root package name */
+    
     private c f5395o;
 
-    /* renamed from: p  reason: collision with root package name */
+    
     private g f5396p;
 
-    /* renamed from: q  reason: collision with root package name */
+    
     private int f5397q;
 
-    /* renamed from: r  reason: collision with root package name */
+    
     private int f5398r;
 
-    /* renamed from: s  reason: collision with root package name */
+    
     private boolean f5399s;
 
-    /* renamed from: g.a$b */
+    
     private static class b extends g {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private final Animatable f5400a;
 
         b(Animatable animatable) {
@@ -59,13 +59,13 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
         }
     }
 
-    /* renamed from: g.a$c */
+    
     static class c extends C0241e.a {
 
-        /* renamed from: K  reason: collision with root package name */
+        
         l.d f5401K;
 
-        /* renamed from: L  reason: collision with root package name */
+        
         h f5402L;
 
         c(c cVar, C0237a aVar, Resources resources) {
@@ -85,14 +85,14 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
             return ((long) i3) | (((long) i2) << 32);
         }
 
-        /* access modifiers changed from: package-private */
+        
         public int B(int[] iArr, Drawable drawable, int i2) {
             int z2 = super.z(iArr, drawable);
             this.f5402L.i(z2, Integer.valueOf(i2));
             return z2;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public int C(int i2, int i3, Drawable drawable, boolean z2) {
             long j2;
             int a2 = super.a(drawable);
@@ -110,7 +110,7 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
             return a2;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public int E(int i2) {
             if (i2 < 0) {
                 return 0;
@@ -118,7 +118,7 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
             return ((Integer) this.f5402L.f(i2, 0)).intValue();
         }
 
-        /* access modifiers changed from: package-private */
+        
         public int F(int[] iArr) {
             int A2 = super.A(iArr);
             if (A2 >= 0) {
@@ -127,12 +127,12 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
             return super.A(StateSet.WILD_CARD);
         }
 
-        /* access modifiers changed from: package-private */
+        
         public int G(int i2, int i3) {
             return (int) ((Long) this.f5401K.f(D(i2, i3), -1L)).longValue();
         }
 
-        /* access modifiers changed from: package-private */
+        
         public boolean H(int i2, int i3) {
             if ((((Long) this.f5401K.f(D(i2, i3), -1L)).longValue() & 4294967296L) != 0) {
                 return true;
@@ -140,7 +140,7 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
             return false;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public boolean I(int i2, int i3) {
             if ((((Long) this.f5401K.f(D(i2, i3), -1L)).longValue() & 8589934592L) != 0) {
                 return true;
@@ -152,7 +152,7 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
             return new C0237a(this, (Resources) null);
         }
 
-        /* access modifiers changed from: package-private */
+        
         public void r() {
             this.f5401K = this.f5401K.clone();
             this.f5402L = this.f5402L.clone();
@@ -163,10 +163,10 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
         }
     }
 
-    /* renamed from: g.a$d */
+    
     private static class d extends g {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private final androidx.vectordrawable.graphics.drawable.e f5403a;
 
         d(androidx.vectordrawable.graphics.drawable.e eVar) {
@@ -183,13 +183,13 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
         }
     }
 
-    /* renamed from: g.a$e */
+    
     private static class e extends g {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private final ObjectAnimator f5404a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         private final boolean f5405b;
 
         e(AnimationDrawable animationDrawable, boolean z2, boolean z3) {
@@ -229,28 +229,28 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
         }
     }
 
-    /* renamed from: g.a$f */
+    
     private static class f implements TimeInterpolator {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private int[] f5406a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         private int f5407b;
 
-        /* renamed from: c  reason: collision with root package name */
+        
         private int f5408c;
 
         f(AnimationDrawable animationDrawable, boolean z2) {
             b(animationDrawable, z2);
         }
 
-        /* access modifiers changed from: package-private */
+        
         public int a() {
             return this.f5408c;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public int b(AnimationDrawable animationDrawable, boolean z2) {
             int i2;
             int numberOfFrames = animationDrawable.getNumberOfFrames();
@@ -463,7 +463,7 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
         setDither(typedArray.getBoolean(C0244c.f5480b, cVar.f5455x));
     }
 
-    /* access modifiers changed from: package-private */
+    
     public void h(C0238b.d dVar) {
         super.h(dVar);
         if (dVar instanceof c) {
@@ -487,8 +487,8 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
         }
     }
 
-    /* access modifiers changed from: package-private */
-    /* renamed from: k */
+    
+    
     public c b() {
         return new c(this.f5395o, this, (Resources) null);
     }
@@ -511,7 +511,7 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
         return this;
     }
 
-    /* access modifiers changed from: protected */
+    
     public boolean onStateChange(int[] iArr) {
         boolean z2;
         int F2 = this.f5395o.F(iArr);
@@ -549,7 +549,7 @@ public class C0237a extends C0241e implements androidx.core.graphics.drawable.b 
         jumpToCurrentState();
     }
 
-    /* renamed from: g.a$g */
+    
     private static abstract class g {
         private g() {
         }

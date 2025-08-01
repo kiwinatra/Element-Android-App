@@ -8,10 +8,10 @@ import androidx.emoji2.text.f;
 
 final class e implements KeyListener {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final KeyListener f83a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private final a f84b;
 
     public static class a {

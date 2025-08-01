@@ -9,18 +9,18 @@ import x.h;
 
 public final class f {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final b f85a;
 
     private static class a extends b {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private final TextView f86a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         private final d f87b;
 
-        /* renamed from: c  reason: collision with root package name */
+        
         private boolean f88c = true;
 
         a(TextView textView) {
@@ -86,7 +86,7 @@ public final class f {
             return transformationMethod;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public InputFilter[] a(InputFilter[] inputFilterArr) {
             if (!this.f88c) {
                 return f(inputFilterArr);
@@ -94,31 +94,31 @@ public final class f {
             return d(inputFilterArr);
         }
 
-        /* access modifiers changed from: package-private */
+        
         public void b(boolean z2) {
             if (z2) {
                 j();
             }
         }
 
-        /* access modifiers changed from: package-private */
+        
         public void c(boolean z2) {
             this.f88c = z2;
             j();
             i();
         }
 
-        /* access modifiers changed from: package-private */
+        
         public void g(boolean z2) {
             this.f88c = z2;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public void j() {
             this.f86a.setTransformationMethod(l(this.f86a.getTransformationMethod()));
         }
 
-        /* access modifiers changed from: package-private */
+        
         public TransformationMethod l(TransformationMethod transformationMethod) {
             if (this.f88c) {
                 return k(transformationMethod);
@@ -131,19 +131,19 @@ public final class f {
         b() {
         }
 
-        /* access modifiers changed from: package-private */
+        
         public abstract InputFilter[] a(InputFilter[] inputFilterArr);
 
-        /* access modifiers changed from: package-private */
+        
         public abstract void b(boolean z2);
 
-        /* access modifiers changed from: package-private */
+        
         public abstract void c(boolean z2);
     }
 
     private static class c extends b {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private final a f89a;
 
         c(TextView textView) {
@@ -154,7 +154,7 @@ public final class f {
             return !androidx.emoji2.text.f.i();
         }
 
-        /* access modifiers changed from: package-private */
+        
         public InputFilter[] a(InputFilter[] inputFilterArr) {
             if (d()) {
                 return inputFilterArr;
@@ -162,14 +162,14 @@ public final class f {
             return this.f89a.a(inputFilterArr);
         }
 
-        /* access modifiers changed from: package-private */
+        
         public void b(boolean z2) {
             if (!d()) {
                 this.f89a.b(z2);
             }
         }
 
-        /* access modifiers changed from: package-private */
+        
         public void c(boolean z2) {
             if (d()) {
                 this.f89a.g(z2);

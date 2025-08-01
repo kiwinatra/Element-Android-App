@@ -4,68 +4,68 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-/* renamed from: k.b  reason: case insensitive filesystem */
+
 public class C0254b implements Iterable {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     c f5595a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private c f5596b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private final WeakHashMap f5597c = new WeakHashMap();
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private int f5598d = 0;
 
-    /* renamed from: k.b$a */
+    
     static class a extends e {
         a(c cVar, c cVar2) {
             super(cVar, cVar2);
         }
 
-        /* access modifiers changed from: package-private */
+        
         public c b(c cVar) {
             return cVar.f5602d;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public c c(c cVar) {
             return cVar.f5601c;
         }
     }
 
-    /* renamed from: k.b$b  reason: collision with other inner class name */
+    
     private static class C0077b extends e {
         C0077b(c cVar, c cVar2) {
             super(cVar, cVar2);
         }
 
-        /* access modifiers changed from: package-private */
+        
         public c b(c cVar) {
             return cVar.f5601c;
         }
 
-        /* access modifiers changed from: package-private */
+        
         public c c(c cVar) {
             return cVar.f5602d;
         }
     }
 
-    /* renamed from: k.b$c */
+    
     static class c implements Map.Entry {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         final Object f5599a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         final Object f5600b;
 
-        /* renamed from: c  reason: collision with root package name */
+        
         c f5601c;
 
-        /* renamed from: d  reason: collision with root package name */
+        
         c f5602d;
 
         c(Object obj, Object obj2) {
@@ -108,19 +108,19 @@ public class C0254b implements Iterable {
         }
     }
 
-    /* renamed from: k.b$d */
+    
     public class d extends f implements Iterator {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private c f5603a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         private boolean f5604b = true;
 
         d() {
         }
 
-        /* access modifiers changed from: package-private */
+        
         public void a(c cVar) {
             boolean z2;
             c cVar2 = this.f5603a;
@@ -136,7 +136,7 @@ public class C0254b implements Iterable {
             }
         }
 
-        /* renamed from: b */
+        
         public Map.Entry next() {
             c cVar;
             if (this.f5604b) {
@@ -169,13 +169,13 @@ public class C0254b implements Iterable {
         }
     }
 
-    /* renamed from: k.b$e */
+    
     private static abstract class e extends f implements Iterator {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         c f5606a;
 
-        /* renamed from: b  reason: collision with root package name */
+        
         c f5607b;
 
         e(c cVar, c cVar2) {
@@ -206,13 +206,13 @@ public class C0254b implements Iterable {
             }
         }
 
-        /* access modifiers changed from: package-private */
+        
         public abstract c b(c cVar);
 
-        /* access modifiers changed from: package-private */
+        
         public abstract c c(c cVar);
 
-        /* renamed from: d */
+        
         public Map.Entry next() {
             c cVar = this.f5607b;
             this.f5607b = e();
@@ -227,9 +227,9 @@ public class C0254b implements Iterable {
         }
     }
 
-    /* renamed from: k.b$f */
+    
     public static abstract class f {
-        /* access modifiers changed from: package-private */
+        
         public abstract void a(c cVar);
     }
 
@@ -243,7 +243,7 @@ public class C0254b implements Iterable {
         return this.f5595a;
     }
 
-    /* access modifiers changed from: protected */
+    
     public c c(Object obj) {
         c cVar = this.f5595a;
         while (cVar != null && !cVar.f5599a.equals(obj)) {
@@ -288,7 +288,7 @@ public class C0254b implements Iterable {
         return true;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public c f(Object obj, Object obj2) {
         c cVar = new c(obj, obj2);
         this.f5598d++;

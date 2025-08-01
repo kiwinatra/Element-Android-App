@@ -140,63 +140,7 @@ public final class MediaDescriptionCompat implements Parcelable {
     /* JADX WARNING: Removed duplicated region for block: B:16:0x0069  */
     /* Code decompiled incorrectly, please refer to instructions dump. */
     public static android.support.v4.media.MediaDescriptionCompat c(java.lang.Object r9) {
-        /*
-            r0 = 0
-            if (r9 == 0) goto L_0x007a
-            int r1 = android.os.Build.VERSION.SDK_INT
-            android.support.v4.media.MediaDescriptionCompat$b r2 = new android.support.v4.media.MediaDescriptionCompat$b
-            r2.<init>()
-            java.lang.String r3 = android.support.v4.media.a.f(r9)
-            r2.f(r3)
-            java.lang.CharSequence r3 = android.support.v4.media.a.h(r9)
-            r2.i(r3)
-            java.lang.CharSequence r3 = android.support.v4.media.a.g(r9)
-            r2.h(r3)
-            java.lang.CharSequence r3 = android.support.v4.media.a.b(r9)
-            r2.b(r3)
-            android.graphics.Bitmap r3 = android.support.v4.media.a.d(r9)
-            r2.d(r3)
-            android.net.Uri r3 = android.support.v4.media.a.e(r9)
-            r2.e(r3)
-            android.os.Bundle r3 = android.support.v4.media.a.c(r9)
-            java.lang.String r4 = "android.support.v4.media.description.MEDIA_URI"
-            if (r3 == 0) goto L_0x0046
-            android.support.v4.media.session.MediaSessionCompat.a(r3)
-            android.os.Parcelable r5 = r3.getParcelable(r4)
-            android.net.Uri r5 = (android.net.Uri) r5
-            goto L_0x0047
-        L_0x0046:
-            r5 = r0
-        L_0x0047:
-            if (r5 == 0) goto L_0x005f
-            java.lang.String r6 = "android.support.v4.media.description.NULL_BUNDLE_FLAG"
-            boolean r7 = r3.containsKey(r6)
-            if (r7 == 0) goto L_0x0059
-            int r7 = r3.size()
-            r8 = 2
-            if (r7 != r8) goto L_0x0059
-            goto L_0x0060
-        L_0x0059:
-            r3.remove(r4)
-            r3.remove(r6)
-        L_0x005f:
-            r0 = r3
-        L_0x0060:
-            r2.c(r0)
-            if (r5 == 0) goto L_0x0069
-            r2.g(r5)
-            goto L_0x0074
-        L_0x0069:
-            r0 = 23
-            if (r1 < r0) goto L_0x0074
-            android.net.Uri r0 = android.support.v4.media.d.a(r9)
-            r2.g(r0)
-        L_0x0074:
-            android.support.v4.media.MediaDescriptionCompat r0 = r2.a()
-            r0.f316i = r9
-        L_0x007a:
-            return r0
-        */
+       
         throw new UnsupportedOperationException("Method not decompiled: android.support.v4.media.MediaDescriptionCompat.c(java.lang.Object):android.support.v4.media.MediaDescriptionCompat");
     }
 

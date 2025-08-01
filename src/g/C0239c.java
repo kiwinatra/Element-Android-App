@@ -9,10 +9,10 @@ import android.graphics.Region;
 import android.graphics.drawable.Drawable;
 import androidx.core.graphics.drawable.a;
 
-/* renamed from: g.c  reason: case insensitive filesystem */
+
 public abstract class C0239c extends Drawable implements Drawable.Callback {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private Drawable f5458a;
 
     public C0239c(Drawable drawable) {
@@ -90,12 +90,12 @@ public abstract class C0239c extends Drawable implements Drawable.Callback {
         this.f5458a.jumpToCurrentState();
     }
 
-    /* access modifiers changed from: protected */
+    
     public void onBoundsChange(Rect rect) {
         this.f5458a.setBounds(rect);
     }
 
-    /* access modifiers changed from: protected */
+    
     public boolean onLevelChange(int i2) {
         return this.f5458a.setLevel(i2);
     }

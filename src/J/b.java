@@ -1,14 +1,14 @@
 package J;
 
-public final /* synthetic */ class b implements Runnable {
+public final  class b implements Runnable {
 
-    /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ String f106a;
+    
+    public final  String f106a;
 
-    /* renamed from: b  reason: collision with root package name */
-    public final /* synthetic */ g f107b;
+    
+    public final  g f107b;
 
-    public /* synthetic */ b(String str, g gVar) {
+    public  b(String str, g gVar) {
         this.f106a = str;
         this.f107b = gVar;
     }

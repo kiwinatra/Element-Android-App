@@ -15,67 +15,67 @@ import androidx.core.graphics.drawable.a;
 import androidx.core.view.C0123b;
 import u.C0287b;
 
-/* renamed from: i.a  reason: case insensitive filesystem */
+
 public class C0245a implements C0287b {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final int f5523a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private final int f5524b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private final int f5525c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private CharSequence f5526d;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     private CharSequence f5527e;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     private Intent f5528f;
 
-    /* renamed from: g  reason: collision with root package name */
+    
     private char f5529g;
 
-    /* renamed from: h  reason: collision with root package name */
+    
     private int f5530h = 4096;
 
-    /* renamed from: i  reason: collision with root package name */
+    
     private char f5531i;
 
-    /* renamed from: j  reason: collision with root package name */
+    
     private int f5532j = 4096;
 
-    /* renamed from: k  reason: collision with root package name */
+    
     private Drawable f5533k;
 
-    /* renamed from: l  reason: collision with root package name */
+    
     private Context f5534l;
 
-    /* renamed from: m  reason: collision with root package name */
+    
     private MenuItem.OnMenuItemClickListener f5535m;
 
-    /* renamed from: n  reason: collision with root package name */
+    
     private CharSequence f5536n;
 
-    /* renamed from: o  reason: collision with root package name */
+    
     private CharSequence f5537o;
 
-    /* renamed from: p  reason: collision with root package name */
+    
     private ColorStateList f5538p = null;
 
-    /* renamed from: q  reason: collision with root package name */
+    
     private PorterDuff.Mode f5539q = null;
 
-    /* renamed from: r  reason: collision with root package name */
+    
     private boolean f5540r = false;
 
-    /* renamed from: s  reason: collision with root package name */
+    
     private boolean f5541s = false;
 
-    /* renamed from: t  reason: collision with root package name */
+    
     private int f5542t = 16;
 
     public C0245a(Context context, int i2, int i3, int i4, int i5, CharSequence charSequence) {
@@ -117,12 +117,12 @@ public class C0245a implements C0287b {
         return false;
     }
 
-    /* renamed from: d */
+    
     public C0287b setActionView(int i2) {
         throw new UnsupportedOperationException();
     }
 
-    /* renamed from: e */
+    
     public C0287b setActionView(View view) {
         throw new UnsupportedOperationException();
     }
@@ -131,7 +131,7 @@ public class C0245a implements C0287b {
         return false;
     }
 
-    /* renamed from: f */
+    
     public C0287b setShowAsActionFlags(int i2) {
         setShowAsAction(i2);
         return this;

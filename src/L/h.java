@@ -2,19 +2,19 @@ package l;
 
 public class h implements Cloneable {
 
-    /* renamed from: e  reason: collision with root package name */
+    
     private static final Object f5795e = new Object();
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private boolean f5796a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private int[] f5797b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private Object[] f5798c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private int f5799d;
 
     public h() {
@@ -77,7 +77,7 @@ public class h implements Cloneable {
         this.f5796a = false;
     }
 
-    /* renamed from: c */
+    
     public h clone() {
         try {
             h hVar = (h) super.clone();

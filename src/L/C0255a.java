@@ -4,58 +4,58 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
-/* renamed from: l.a  reason: c4ase insensitive filesystem */
+
 public class C0255a extends g implements Map {
 
-    /* renamed from: h  reason: collision with root package name */
+    
     f f5744h;
 
-    /* renamed from: l.a$a  reason: collision with other inner class name */
+    
     class C0078a extends f {
         C0078a() {
         }
 
-        /* access modifiers changed from: protected */
+        
         public void a() {
             C0255a.this.clear();
         }
 
-        /* access modifiers changed from: protected */
+        
         public Object b(int i2, int i3) {
             return C0255a.this.f5793b[(i2 << 1) + i3];
         }
 
-        /* access modifiers changed from: protected */
+        
         public Map c() {
             return C0255a.this;
         }
 
-        /* access modifiers changed from: protected */
+        
         public int d() {
             return C0255a.this.f5794c;
         }
 
-        /* access modifiers changed from: protected */
+        
         public int e(Object obj) {
             return C0255a.this.f(obj);
         }
 
-        /* access modifiers changed from: protected */
+        
         public int f(Object obj) {
             return C0255a.this.h(obj);
         }
 
-        /* access modifiers changed from: protected */
+        
         public void g(Object obj, Object obj2) {
             C0255a.this.put(obj, obj2);
         }
 
-        /* access modifiers changed from: protected */
+        
         public void h(int i2) {
             C0255a.this.k(i2);
         }
 
-        /* access modifiers changed from: protected */
+        
         public Object i(int i2, Object obj) {
             return C0255a.this.l(i2, obj);
         }

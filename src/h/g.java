@@ -11,27 +11,27 @@ import java.lang.ref.WeakReference;
 
 final class g implements TextWatcher {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     private final EditText f90a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     private final boolean f91b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     private f.C0042f f92c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     private int f93d = Integer.MAX_VALUE;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     private int f94e = 0;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     private boolean f95f;
 
     private static class a extends f.C0042f {
 
-        /* renamed from: a  reason: collision with root package name */
+        
         private final Reference f96a;
 
         a(EditText editText) {

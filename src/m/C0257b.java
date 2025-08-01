@@ -4,28 +4,28 @@ import java.util.ArrayList;
 import m.C0259d;
 import m.i;
 
-/* renamed from: m.b  reason: case insensitive filesystem */
+
 public class C0257b implements C0259d.a {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     i f5820a = null;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     float f5821b = 0.0f;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     boolean f5822c = false;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     ArrayList f5823d = new ArrayList();
 
-    /* renamed from: e  reason: collision with root package name */
+    
     public a f5824e;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     boolean f5825f = false;
 
-    /* renamed from: m.b$a */
+    
     public interface a {
         float a(int i2);
 
@@ -200,13 +200,13 @@ public class C0257b implements C0259d.a {
         return this;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public C0257b e(i iVar, int i2) {
         this.f5824e.b(iVar, (float) i2);
         return this;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public boolean f(C0259d dVar) {
         boolean z2;
         i g2 = g(dVar);
@@ -222,7 +222,7 @@ public class C0257b implements C0259d.a {
         return z2;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public i g(C0259d dVar) {
         int k2 = this.f5824e.k();
         i iVar = null;
@@ -266,7 +266,7 @@ public class C0257b implements C0259d.a {
         return this.f5820a;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public C0257b h(i iVar, i iVar2, int i2, float f2, i iVar3, i iVar4, int i3) {
         float f3;
         int i4;
@@ -312,7 +312,7 @@ public class C0257b implements C0259d.a {
         return this;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public C0257b i(i iVar, int i2) {
         this.f5820a = iVar;
         float f2 = (float) i2;
@@ -329,7 +329,7 @@ public class C0257b implements C0259d.a {
         return false;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public C0257b j(i iVar, i iVar2, float f2) {
         this.f5824e.b(iVar, -1.0f);
         this.f5824e.b(iVar2, f2);
@@ -453,7 +453,7 @@ public class C0257b implements C0259d.a {
         return this;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public void r() {
         float f2 = this.f5821b;
         if (f2 < 0.0f) {
@@ -462,7 +462,7 @@ public class C0257b implements C0259d.a {
         }
     }
 
-    /* access modifiers changed from: package-private */
+    
     public boolean s() {
         i iVar = this.f5820a;
         if (iVar == null || (iVar.f5878j != i.a.UNRESTRICTED && this.f5821b < 0.0f)) {
@@ -471,7 +471,7 @@ public class C0257b implements C0259d.a {
         return true;
     }
 
-    /* access modifiers changed from: package-private */
+    
     public boolean t(i iVar) {
         return this.f5824e.d(iVar);
     }
@@ -484,7 +484,7 @@ public class C0257b implements C0259d.a {
         return w((boolean[]) null, iVar);
     }
 
-    /* access modifiers changed from: package-private */
+    
     public void x(i iVar) {
         i iVar2 = this.f5820a;
         if (iVar2 != null) {
@@ -507,135 +507,13 @@ public class C0257b implements C0259d.a {
         this.f5825f = false;
     }
 
-    /* access modifiers changed from: package-private */
-    /* JADX WARNING: Code restructure failed: missing block: B:13:0x0066, code lost:
-        r7 = r10.f5824e.a(r2);
-     */
-    /* JADX WARNING: Removed duplicated region for block: B:27:0x00b4  */
-    /* JADX WARNING: Removed duplicated region for block: B:29:0x00c4  */
-    /* Code decompiled incorrectly, please refer to instructions dump. */
+    
+    
+    
+    
+    
     public java.lang.String z() {
-        /*
-            r10 = this;
-            m.i r0 = r10.f5820a
-            java.lang.String r1 = ""
-            if (r0 != 0) goto L_0x0018
-            java.lang.StringBuilder r0 = new java.lang.StringBuilder
-            r0.<init>()
-            r0.append(r1)
-            java.lang.String r1 = "0"
-            r0.append(r1)
-        L_0x0013:
-            java.lang.String r0 = r0.toString()
-            goto L_0x0026
-        L_0x0018:
-            java.lang.StringBuilder r0 = new java.lang.StringBuilder
-            r0.<init>()
-            r0.append(r1)
-            m.i r1 = r10.f5820a
-            r0.append(r1)
-            goto L_0x0013
-        L_0x0026:
-            java.lang.StringBuilder r1 = new java.lang.StringBuilder
-            r1.<init>()
-            r1.append(r0)
-            java.lang.String r0 = " = "
-            r1.append(r0)
-            java.lang.String r0 = r1.toString()
-            float r1 = r10.f5821b
-            r2 = 0
-            r3 = 1
-            r4 = 0
-            int r1 = (r1 > r4 ? 1 : (r1 == r4 ? 0 : -1))
-            if (r1 == 0) goto L_0x0053
-            java.lang.StringBuilder r1 = new java.lang.StringBuilder
-            r1.<init>()
-            r1.append(r0)
-            float r0 = r10.f5821b
-            r1.append(r0)
-            java.lang.String r0 = r1.toString()
-            r1 = 1
-            goto L_0x0054
-        L_0x0053:
-            r1 = 0
-        L_0x0054:
-            m.b$a r5 = r10.f5824e
-            int r5 = r5.k()
-        L_0x005a:
-            if (r2 >= r5) goto L_0x00d6
-            m.b$a r6 = r10.f5824e
-            m.i r6 = r6.e(r2)
-            if (r6 != 0) goto L_0x0066
-            goto L_0x00d3
-        L_0x0066:
-            m.b$a r7 = r10.f5824e
-            float r7 = r7.a(r2)
-            int r8 = (r7 > r4 ? 1 : (r7 == r4 ? 0 : -1))
-            if (r8 != 0) goto L_0x0071
-            goto L_0x00d3
-        L_0x0071:
-            java.lang.String r6 = r6.toString()
-            r9 = -1082130432(0xffffffffbf800000, float:-1.0)
-            if (r1 != 0) goto L_0x0091
-            int r1 = (r7 > r4 ? 1 : (r7 == r4 ? 0 : -1))
-            if (r1 >= 0) goto L_0x00ae
-            java.lang.StringBuilder r1 = new java.lang.StringBuilder
-            r1.<init>()
-            r1.append(r0)
-            java.lang.String r0 = "- "
-        L_0x0087:
-            r1.append(r0)
-            java.lang.String r0 = r1.toString()
-            float r7 = r7 * r9
-            goto L_0x00ae
-        L_0x0091:
-            java.lang.StringBuilder r1 = new java.lang.StringBuilder
-            if (r8 <= 0) goto L_0x00a5
-            r1.<init>()
-            r1.append(r0)
-            java.lang.String r0 = " + "
-            r1.append(r0)
-            java.lang.String r0 = r1.toString()
-            goto L_0x00ae
-        L_0x00a5:
-            r1.<init>()
-            r1.append(r0)
-            java.lang.String r0 = " - "
-            goto L_0x0087
-        L_0x00ae:
-            r1 = 1065353216(0x3f800000, float:1.0)
-            int r1 = (r7 > r1 ? 1 : (r7 == r1 ? 0 : -1))
-            if (r1 != 0) goto L_0x00c4
-            java.lang.StringBuilder r1 = new java.lang.StringBuilder
-            r1.<init>()
-        L_0x00b9:
-            r1.append(r0)
-            r1.append(r6)
-            java.lang.String r0 = r1.toString()
-            goto L_0x00d2
-        L_0x00c4:
-            java.lang.StringBuilder r1 = new java.lang.StringBuilder
-            r1.<init>()
-            r1.append(r0)
-            r1.append(r7)
-            java.lang.String r0 = " "
-            goto L_0x00b9
-        L_0x00d2:
-            r1 = 1
-        L_0x00d3:
-            int r2 = r2 + 1
-            goto L_0x005a
-        L_0x00d6:
-            if (r1 != 0) goto L_0x00e9
-            java.lang.StringBuilder r1 = new java.lang.StringBuilder
-            r1.<init>()
-            r1.append(r0)
-            java.lang.String r0 = "0.0"
-            r1.append(r0)
-            java.lang.String r0 = r1.toString()
-        L_0x00e9:
-            return r0
-        */
+        
         throw new UnsupportedOperationException("Method not decompiled: m.C0257b.z():java.lang.String");
     }
 

@@ -13,63 +13,63 @@ import androidx.core.content.res.h;
 
 public class d {
 
-    /* renamed from: a  reason: collision with root package name */
+    
     public final ColorStateList f5499a;
 
-    /* renamed from: b  reason: collision with root package name */
+    
     public final ColorStateList f5500b;
 
-    /* renamed from: c  reason: collision with root package name */
+    
     public final ColorStateList f5501c;
 
-    /* renamed from: d  reason: collision with root package name */
+    
     public final String f5502d;
 
-    /* renamed from: e  reason: collision with root package name */
+    
     public final int f5503e;
 
-    /* renamed from: f  reason: collision with root package name */
+    
     public final int f5504f;
 
-    /* renamed from: g  reason: collision with root package name */
+    
     public final boolean f5505g;
 
-    /* renamed from: h  reason: collision with root package name */
+    
     public final float f5506h;
 
-    /* renamed from: i  reason: collision with root package name */
+    
     public final float f5507i;
 
-    /* renamed from: j  reason: collision with root package name */
+    
     public final float f5508j;
 
-    /* renamed from: k  reason: collision with root package name */
+    
     public final boolean f5509k;
 
-    /* renamed from: l  reason: collision with root package name */
+    
     public final float f5510l;
 
-    /* renamed from: m  reason: collision with root package name */
+    
     private ColorStateList f5511m;
 
-    /* renamed from: n  reason: collision with root package name */
+    
     private float f5512n;
 
-    /* renamed from: o  reason: collision with root package name */
+    
     private final int f5513o;
-    /* access modifiers changed from: private */
+    
 
-    /* renamed from: p  reason: collision with root package name */
+    
     public boolean f5514p = false;
-    /* access modifiers changed from: private */
+    
 
-    /* renamed from: q  reason: collision with root package name */
+    
     public Typeface f5515q;
 
     class a extends h.e {
 
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ f f5516a;
+        
+        final  f f5516a;
 
         a(f fVar) {
             this.f5516a = fVar;
@@ -90,14 +90,14 @@ public class d {
 
     class b extends f {
 
-        /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Context f5518a;
+        
+        final  Context f5518a;
 
-        /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ TextPaint f5519b;
+        
+        final  TextPaint f5519b;
 
-        /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ f f5520c;
+        
+        final  f f5520c;
 
         b(Context context, TextPaint textPaint, f fVar) {
             this.f5518a = context;
