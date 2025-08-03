@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="elem.social.com">
+
+        <user-data>
+            <!-- Handle functions for application
+            @xmldata setting - usage
+            -->
+
+            <activity src="handle.kt**/handlers.kt"
+
+    </manifest>
