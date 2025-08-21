@@ -60,10 +60,10 @@ object Video
 object DownloadProgress
 object ProgressRing
 
-// Simple Elements
+
 object User
 
-// Sidebar Components (exported separately as in original)
+
 object Sidebar
 object MobileSidebarMenu
 object MenuItem
@@ -71,10 +71,10 @@ object UserCard
 object ChannelItem
 object AccountsList
 
-// Type definitions (using Kotlin interfaces/classes)
+
 interface AvatarProps {
     val src: String
     val size: Int
     val alt: String
-    // Add other avatar properties as needed
+    
 }

@@ -1,0 +1,100 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.elem.app</groupId>
+  <artifactId>elemapp</artifactId>
+  <version>1.0.0</version>
+  <packaging>apk</packaging>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <android.sdk.path>${env.ANDROID_HOME}</android.sdk.path>
+    <android.sdk.platform>21</android.sdk.platform>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <lombok.version>1.18.28</lombok.version>
+  </properties>
+
+  <dependencies>
+    <!-- Android support: используем android.jar по таргету SDK -->
+    <dependency>
+      <groupId>com.google.android</groupId>
+      <artifactId>android</artifactId>
+      <version>${android.sdk.platform}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Пример: AndroidX (если нужен) -->
+    <!--
+    <dependency>
+      <groupId>androidx.appcompat</groupId>
+      <artifactId>appcompat</artifactId>
+      <version>1.6.1</version>
+    </dependency>
+    -->
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Компиляция Java -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
+          <annotationProcessorPaths>
+            <path>
+              <groupId>org.projectlombok</groupId>
+              <artifactId>lombok</artifactId>
+              <version>${lombok.version}</version>
+            </path>
+          </annotationProcessorPaths>
+        </configuration>
+      </plugin>
+
+      <!-- Android Maven Plugin (maven-android-plugin) -->
+      <plugin>
+        <groupId>com.simpligility.maven.plugins</groupId>
+        <artifactId>android-maven-plugin</artifactId>
+        <version>4.6.0</version>
+        <configuration>
+          <sdk>
+            <platform>${android.sdk.platform}</platform>
+          </sdk>
+          <sign>
+            <debug>true</debug>
+          </sign>
+        </configuration>
+        <extensions>true</extensions>
+      </plugin>
+
+      <!-- Maven Shade или Assembly не обязателен для APK -->
+    </plugins>
+  </build>
+
+  <profiles>
+    <!-- Профиль для подписи релиза (пример) -->
+    <profile>
+      <id>release</id>
+      <properties>
+        <android.signing.keyAlias>mykey</android.signing.keyAlias>
+        <android.signing.store>keystore.jks</android.signing.store>
+        <android.signing.storePassword>changeit</android.signing.storePassword>
+        <android.signing.keyPassword>changeit</android.signing.keyPassword>
+      </properties>
+    </profile>
+  </profiles>
+</project>
